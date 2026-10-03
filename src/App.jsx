@@ -18,8 +18,7 @@ import MentorsSection from './components/MentorsSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import CertificateSection from './components/CertificateSection';
 import FaqSection from './components/FaqSection';
-import BottomCtaSection from './components/BottomCtaSection';
-import BranchesSection from './components/BranchesSection';
+import HubShowcaseSection from './components/HubShowcaseSection';
 import Footer from './components/Footer';
 import EnquiryModal from './components/EnquiryModal';
 
@@ -51,16 +50,19 @@ export default function App() {
 
       <main>
         {/* 3. Hero Section with Live Countdown and Connected Graphic */}
-        <Hero 
-          onEnrollClick={() => handleOpenModal('AI Engineering Enrollment')} 
+        <Hero
+          onEnrollClick={() => handleOpenModal('AI Engineering Enrollment')}
           onViewCurriculumClick={scrollToCurriculum}
         />
+
+        {/* Urgency Banner */}
+        <UrgencyBanner onApplyClick={() => handleOpenModal('Experienced Track Application')} />
 
         {/* 5. Key Statistics Bar */}
         <StatsBar />
 
         {/* 6. Why This Program & Sticky Application Form */}
-        <ProgramOverview onFormSuccess={() => {}} />
+        <ProgramOverview onFormSuccess={() => { }} />
 
         {/* 7. AI Systems You'll Build (Topics Grid) */}
         <TopicsGrid />
@@ -95,23 +97,17 @@ export default function App() {
         {/* 17. FAQs Section with Accordion */}
         <FaqSection onContactClick={() => handleOpenModal('General Inquiry')} />
 
-        {/* 18. Bottom Dark CTA Banner */}
-        <BottomCtaSection onApplyClick={() => handleOpenModal('Direct Program Application')} />
-
-        {/* 19. Branches Section */}
-        <BranchesSection />
+        {/* 18. Hub Showcase Section (World Map, Kochi Hub Card, Spinning Contact Stamp) */}
+        <HubShowcaseSection onApplyClick={() => handleOpenModal('Direct Program Application')} />
       </main>
 
-      {/* 20. Skyscraper Night Footer */}
+      {/* 19. Skyscraper Footer */}
       <Footer />
 
-      {/* Fixed Bottom Nav (Urgency Banner) */}
-      <UrgencyBanner onApplyClick={() => handleOpenModal('Experienced Track Application')} />
-
       {/* Interactive Modal */}
-      <EnquiryModal 
-        isOpen={modalOpen} 
-        onClose={handleCloseModal} 
+      <EnquiryModal
+        isOpen={modalOpen}
+        onClose={handleCloseModal}
         defaultTopic={modalTopic}
       />
     </div>

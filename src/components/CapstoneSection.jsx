@@ -39,20 +39,20 @@ export default function CapstoneSection({ onExploreClick }) {
               Month 3 hands you an intentionally open-ended client-style RFP. You'll scope it, architect it, build it and demo it — the same ambiguity you'll meet on your first real engagement. Most teams land on one of four directions:
             </p>
 
-            <button 
-              type="button" 
-              onClick={onExploreClick} 
+            <button
+              type="button"
+              onClick={onExploreClick}
               className="btn-primary"
-              style={{ marginBottom: '24px' }}
+              style={{ marginBottom: '32px' }}
             >
-              Explore Now <ArrowUpRight size={18} />
+              Explore Now <ArrowUpRight size={17} />
             </button>
 
             <div className="capstone-cards-list">
               {capstoneProjects.map((p, idx) => (
                 <div key={idx} className="capstone-item-card">
                   <div className="capstone-icon-circle">
-                    <Compass size={22} />
+                    <Compass size={18} />
                   </div>
                   <div>
                     <h4>{p.title}</h4>
@@ -65,49 +65,64 @@ export default function CapstoneSection({ onExploreClick }) {
 
           {/* Right Column: Photo & Floating Metric Card */}
           <div className="capstone-media-wrap">
-            <img 
-              src="/assets/students-group.jpg" 
-              alt="Engineering students collaborating on AI Capstone" 
-              className="capstone-main-img" 
+            <img
+              src="/assets/students-group.jpg"
+              alt="Engineering students collaborating on AI Capstone"
+              className="capstone-main-img"
             />
 
-            {/* Floating Metric Card matching design */}
+            {/* Floating Metric Card — bottom-left of image */}
             <div className="capstone-floating-metric">
+              {/* Header row: date | Week dropdown | play btn */}
               <div className="metric-header">
-                <span>8-15 Jan</span>
-                <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  Week <ChevronDown size={14} />
+                <span style={{ fontSize: '12px', fontWeight: 600, color: '#374151' }}>8-15 Jan</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '3px', fontSize: '12px', color: '#374151', fontWeight: 600 }}>
+                  Week <ChevronDown size={13} />
                 </span>
                 <div style={{
-                  width: '20px',
-                  height: '20px',
+                  width: '22px',
+                  height: '22px',
                   borderRadius: '50%',
                   background: '#111827',
                   color: '#ffffff',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                  marginLeft: 'auto'
                 }}>
-                  <Play size={10} fill="#ffffff" />
+                  <Play size={9} fill="#ffffff" strokeWidth={0} />
                 </div>
               </div>
 
-              <div className="metric-value-wrap">
-                <span className="metric-badge">+60%</span>
-                <svg width="100" height="35" viewBox="0 0 100 35" fill="none">
-                  <path 
-                    d="M5 30 C 30 28, 50 15, 95 6" 
-                    stroke="#6366F1" 
-                    strokeWidth="3.5" 
-                    strokeLinecap="round" 
-                  />
-                  <circle cx="68" cy="20" r="4" fill="#6366F1" />
-                </svg>
+              {/* Chart area with y-axis + badge + curve */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                {/* +60% badge + chart */}
+                <div style={{ flex: 1 }}>
+                  <div className="metric-value-wrap">
+                    <span className="metric-badge">+60%</span>
+                  </div>
+                  <svg width="110" height="52" viewBox="0 0 110 52" fill="none" style={{ display: 'block', marginTop: '6px' }}>
+                    {/* Curve */}
+                    <path
+                      d="M4 46 C 25 42, 50 28, 106 8"
+                      stroke="#6366F1"
+                      strokeWidth="2.8"
+                      strokeLinecap="round"
+                    />
+                    {/* Dot on curve at ~65% */}
+                    <circle cx="72" cy="24" r="4.5" fill="#6366F1" />
+                  </svg>
+                </div>
+                {/* Y-axis labels */}
+                <div className="metric-y-axis">
+                  <span>4K</span>
+                  <span>2K</span>
+                  <span>0</span>
+                </div>
               </div>
 
-              <div className="metric-subtitle">
-                New students
-              </div>
+              <div className="metric-subtitle">New students</div>
             </div>
           </div>
         </div>

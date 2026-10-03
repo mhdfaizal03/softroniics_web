@@ -35,32 +35,36 @@ export default function FaqSection({ onContactClick }) {
   return (
     <section className="faq-section" id="faq">
       <div className="container">
-        <div className="section-header" style={{ textAlign: 'left', margin: '0 0 40px 0', maxWidth: '700px' }}>
-          <div className="badge-pill">
-            FAQs
-          </div>
-          <h2>Answers to Your Most Common Questions</h2>
-          <p>
-            Find quick, clear answers to the questions we get asked the most. Whether you're exploring AI solutions or ready to start, we've got you covered.
-          </p>
-        </div>
-
         <div className="faq-grid">
-          {/* Left Contact Card */}
-          <div className="faq-contact-card">
-            <div className="faq-icon-box">
-              <Phone size={24} />
+          {/* Left Column */}
+          <div className="faq-left-col">
+            <div className="faq-header-content">
+              <div className="badge-pill" style={{ background: '#FEF4E7', color: '#E88F1B', textTransform: 'uppercase' }}>
+                FAQS
+              </div>
+              <h2 className="faq-main-title">
+                <span style={{ color: '#E88F1B' }}>Answers</span> to Your Most Common Questions
+              </h2>
+              <p className="faq-main-desc">
+                Find quick, clear answers to the questions we get asked the most. Whether you're exploring AI solutions or ready to start, we've got you covered.
+              </p>
             </div>
-            <h4>
-              Still Have Questions? Let's talk and find the perfect AI solution for your business.
-            </h4>
-            <button 
-              type="button" 
-              onClick={onContactClick} 
-              className="btn-contact-us"
-            >
-              Contact Us <ArrowUpRight size={16} />
-            </button>
+
+            <div className="faq-contact-card">
+              <div className="faq-icon-box">
+                <Phone size={18} color="#18181B" strokeWidth={2.5} />
+              </div>
+              <h4>
+                Still Have Questions? Let's talk and<br />find the perfect AI solution for your business.
+              </h4>
+              <button 
+                type="button" 
+                onClick={onContactClick} 
+                className="btn-contact-us"
+              >
+                Contact Us <ArrowUpRight size={16} strokeWidth={2.5} />
+              </button>
+            </div>
           </div>
 
           {/* Right Accordion */}
@@ -82,7 +86,7 @@ export default function FaqSection({ onContactClick }) {
                       <span className="faq-num">{faq.num}</span>
                       <span>{faq.question}</span>
                     </div>
-                    {isOpen ? <Minus size={20} /> : <Plus size={20} />}
+                    {isOpen ? <Minus size={20} strokeWidth={2.5} /> : <Plus size={20} strokeWidth={2.5} />}
                   </button>
 
                   {isOpen && (

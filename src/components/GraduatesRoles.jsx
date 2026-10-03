@@ -27,13 +27,13 @@ export default function GraduatesRoles() {
   return (
     <section className="roles-section" id="roles">
       <div className="container">
+        {/* Left-aligned header matching design */}
         <div className="section-header">
-          <div className="badge-pill">
-            Career outcomes
-          </div>
+          <div className="badge-pill">Career outcomes</div>
           <h2>Where Our Graduates Work</h2>
           <p>
-            The program is scoped around five roles that experienced engineers move into after building production AI systems end to end.
+            The program is scoped around five roles that experienced engineers
+            move into after building production AI systems end to end.
           </p>
         </div>
 

@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softroniics | AI Engineering Program - Build Real-World AI Systems</title>
+    <meta name="description" content="A 12-week hands-on AI engineering program covering LLMs, AI agents, deployment, evaluation, and production systems.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Softroniics Logo -->
+                <img src="assets/extracted_img_12.png" alt="Softroniics Logo" height="34" class="me-2"
+                    onerror="this.onerror=null; this.src='assets/extracted_img_1.png';">
+                <span class="fw-bolder fs-4 text-dark" style="letter-spacing: -0.8px;">Softroniics</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-medium nav-links text-dark fs-6 gap-2">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#curriculum">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#capstone">Capstone</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#mentors">Mentors</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#hub">Our Hub</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#faq">FAQ</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary-theme px-4 py-2 fw-bold rounded-1" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                    Enquire Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Ticker Bar -->
+    <div class="ticker-bar py-2">
+        <div class="container text-center text-orange fw-medium" style="font-size: 13px;">
+            ★ New Cohort Starting Soon ★ Apply For The Experienced Track ★ Limited Seats ★ 3 Months, 4 Days/Week ★
+            Enrollment Closes Soon ★ Build Production AI Systems &nbsp; 
+            <a href="#overview" class="text-danger fw-bold text-decoration-none ms-2" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                <i class="fa-solid fa-star me-1" style="font-size:0.8em"></i> Apply Now
+            </a>
+        </div>
+    </div>
+
+    <!-- 3. Hero Section -->
+    <section class="hero-section position-relative" id="home">
+        <!-- Background Grid -->
+        <div class="bg-grid"></div>
+
+        <div class="container py-5 mt-3 position-relative z-index-1">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6 hero-content pe-lg-5">
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-4 rounded-1" style="font-size: 13.5px;">
+                        AI Forward deployed engineering
+                    </div>
+
+                    <div class="d-flex gap-4 mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-orange rounded-circle text-white d-flex align-items-center justify-content-center me-2">
+                                <i class="fa-solid fa-stopwatch"></i>
+                            </div>
+                            <div>
+                                <div class="text-orange fw-bold lh-1" style="font-size: 12px;">Duration</div>
+                                <div class="fw-bold lh-1 mt-1 fs-6">3 months</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="icon-orange rounded-circle text-white d-flex align-items-center justify-content-center me-2">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                            </div>
+                            <div>
+                                <div class="text-orange fw-bold lh-1" style="font-size: 12px;">Schedule</div>
+                                <div class="fw-bold lh-1 mt-1 fs-6">Weekday & Weekend cohorts</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="fw-bolder display-4 mb-1 text-dark title-black">AI Engineering Program</h1>
+                    <h2 class="fw-bold display-5 mb-4 text-orange fst-italic">Build real-world AI systems.</h2>
+
+                    <p class="text-dark mb-4 max-w-500" style="font-size: 15px; font-weight: 500; line-height: 1.6;">
+                        A 12-week hands-on AI engineering program covering LLMs, AI agents, deployment, evaluation, and
+                        production systems.
+                    </p>
+
+                    <div class="d-flex align-items-center flex-wrap gap-3 mb-4">
+                        <button type="button" class="btn btn-primary-theme fw-bold px-4 py-2 rounded-1" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                            Enroll Now <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em"></i>
+                        </button>
+                        <a href="#curriculum" class="btn btn-outline-primary-theme fw-bold px-4 py-2 rounded-1">
+                            View Curriculum
+                        </a>
+                        <div class="ms-lg-3">
+                            <div class="text-orange" style="font-size: 12px;">Call Us</div>
+                            <a href="tel:+919037291113" class="fw-bold text-dark lh-1 text-decoration-none" style="font-size: 18px;">+91 9037-29-1113</a>
+                        </div>
+                    </div>
+
+                    <div class="d-inline-flex align-items-center bg-light-red text-danger fw-semibold px-3 py-2 rounded-2 mb-4" style="font-size: 14px;">
+                        <i class="fa-solid fa-fire me-2"></i> Next cohort — only 9 of 40 seats left
+                    </div>
+
+                    <!-- Live Countdown Timer -->
+                    <div class="mt-2">
+                        <div class="text-dark mb-2 fw-medium" style="font-size: 14px;">Applications close in</div>
+                        <div class="d-flex gap-2 text-center">
+                            <div class="timer-box rounded-1 px-3 py-2">
+                                <div class="fw-bolder fs-4 text-orange lh-1" id="timer-days">24</div>
+                                <div class="fw-bold text-orange mt-1" style="font-size: 10px; letter-spacing: 0.5px;">DAYS</div>
+                            </div>
+                            <div class="timer-box rounded-1 px-3 py-2">
+                                <div class="fw-bolder fs-4 text-orange lh-1" id="timer-hours">18</div>
+                                <div class="fw-bold text-orange mt-1" style="font-size: 10px; letter-spacing: 0.5px;">HOURS</div>
+                            </div>
+                            <div class="timer-box rounded-1 px-3 py-2">
+                                <div class="fw-bolder fs-4 text-orange lh-1" id="timer-mins">42</div>
+                                <div class="fw-bold text-orange mt-1" style="font-size: 10px; letter-spacing: 0.5px;">MIN</div>
+                            </div>
+                            <div class="timer-box rounded-1 px-3 py-2">
+                                <div class="fw-bolder fs-4 text-orange lh-1" id="timer-secs">59</div>
+                                <div class="fw-bold text-orange mt-1" style="font-size: 10px; letter-spacing: 0.5px;">SEC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content (Image Collage) -->
+                <div class="col-lg-6 position-relative mt-5 mt-lg-0 d-none d-lg-block">
+                    <div class="collage-container position-relative w-100" style="height: 500px;">
+                        <!-- Small Top Left -->
+                        <img src="assets/extracted_img_4.jpg" class="collage-img rounded-4 position-absolute shadow"
+                            alt="Students" style="top: 0; left: 15%; width: 140px; height: 140px; object-fit: cover;">
+
+                        <!-- Large Top Right -->
+                        <img src="assets/extracted_img_10.jpg" class="collage-img rounded-4 position-absolute shadow-lg"
+                            alt="AI Workshop" style="top: 0; right: 0; width: 320px; height: 350px; object-fit: cover; z-index:2;">
+
+                        <!-- Small Mid Left -->
+                        <img src="assets/extracted_img_5.jpg" class="collage-img rounded-4 position-absolute shadow"
+                            alt="Engineering" style="top: 155px; left: 0; width: 180px; height: 180px; object-fit: cover;">
+
+                        <!-- Small Bottom Mid (Circle) -->
+                        <div class="position-absolute shadow rounded-circle bg-white"
+                            style="top: 310px; left: 25%; width: 110px; height: 110px; z-index:3; padding: 5px;">
+                            <img src="assets/extracted_img_6.jpg" class="rounded-circle w-100 h-100" alt="Student"
+                                style="object-fit: cover;">
+                        </div>
+
+                        <!-- Bottom Right 1 -->
+                        <img src="assets/extracted_img_7.jpg" class="collage-img rounded-4 position-absolute shadow-lg"
+                            alt="Pair Programming"
+                            style="bottom: -20px; right: 130px; width: 180px; height: 180px; object-fit: cover; z-index:2;">
+
+                        <!-- Bottom Right 2 -->
+                        <img src="assets/extracted_img_8.jpg" class="collage-img rounded-4 position-absolute shadow"
+                            alt="Lab" style="bottom: 10px; right: 0; width: 110px; height: 110px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Alert Bar -->
+    <div class="alert-bar bg-light-yellow py-4 mt-4">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <i class="fa-solid fa-fire text-orange fs-2 me-3"></i>
+                    <div>
+                        <h5 class="fw-bold mb-0 text-dark fs-5">Only 9 of 40 seats left</h5>
+                        <p class="mb-0 text-dark" style="font-size: 15px;">Next cohort — applications close soon</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary-theme fw-bold px-4 py-3 rounded-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                    Apply for the experienced track <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Features Bar -->
+    <div class="features-bar bg-primary-theme text-dark py-4">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start px-lg-4">
+                    <div class="feature-icon bg-light-purple text-purple rounded-circle d-flex align-items-center justify-content-center me-3"
+                        style="width: 55px; height: 55px; font-size: 1.5rem; background-color: #EEDCFF;">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bolder mb-0 lh-1">3M</h3>
+                        <div class="fw-medium text-dark opacity-75" style="font-size: 14px;">full-time depth</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start px-lg-4">
+                    <div class="feature-icon bg-light-red text-danger rounded-circle d-flex align-items-center justify-content-center me-3"
+                        style="width: 55px; height: 55px; font-size: 1.5rem; background-color: #FFE6E6;">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bolder mb-0 lh-1">36+</h3>
+                        <div class="fw-medium text-dark opacity-75" style="font-size: 14px;">Live build sessions</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start px-lg-4">
+                    <div class="feature-icon bg-light-blue text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                        style="width: 55px; height: 55px; font-size: 1.5rem; background-color: #E6F3FF;">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bolder mb-0 lh-1">4x</h3>
+                        <div class="fw-medium text-dark opacity-75" style="font-size: 14px;">Days per week</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 d-flex align-items-center justify-content-center justify-content-md-start px-lg-4">
+                    <div class="feature-icon bg-light-yellow text-warning rounded-circle d-flex align-items-center justify-content-center me-3"
+                        style="width: 55px; height: 55px; font-size: 1.5rem; background-color: #FFF9E5;">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div>
+                        <h3 class="fw-bolder mb-0 lh-1">100%</h3>
+                        <div class="fw-medium text-dark opacity-75" style="font-size: 14px;">Project-based, no filler</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Program Details Section -->
+    <section class="program-details-section py-5 my-5" id="overview">
+        <div class="container">
+            <div class="row align-items-start g-5">
+                <!-- Left Content -->
+                <div class="col-lg-7 pe-lg-5">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="#" class="text-orange text-decoration-none fw-medium" style="font-size: 14px;">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#overview" class="text-orange text-decoration-none fw-medium" style="font-size: 14px;">Training</a></li>
+                            <li class="breadcrumb-item active text-muted fw-medium" style="font-size: 14px;" aria-current="page">AI Engineering Program</li>
+                        </ol>
+                    </nav>
+
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-4 rounded-1" style="font-size: 14px;">
+                        Why this program
+                    </div>
+
+                    <h2 class="fw-bolder display-5 mb-4 text-dark title-black">Learn AI Engineering<br>Through Real Projects</h2>
+
+                    <div class="text-muted mb-5 program-desc">
+                        <p>Master the full stack of forward deployed AI engineering — from fine-tuning foundation models
+                            to shipping multi-agent systems inside real enterprise stacks. Live build sessions, senior
+                            mentors, and consulting craft included.</p>
+                        <p>At FDE-ACCEL, we train engineers who ship AI that survives contact with a client's actual
+                            infrastructure. Whether you're an experienced backend engineer moving into AI or an ML
+                            engineer ready to own the full deployment lifecycle, the Experienced Track meets you at
+                            senior level from week one.</p>
+                        <p>Go beyond fine-tuning tutorials and RAG demos. Our curriculum emphasizes GraphRAG,
+                            multi-agent orchestration, observability, security and cost-aware inference at scale — the
+                            systems-level skills that separate a forward deployed engineer from someone who can only
+                            build a proof of concept.</p>
+                        <p>Apply today and join a cohort of engineers building toward AI Architect, AI Consultant, and
+                            Staff/Lead Applied AI Engineer roles. FDE-ACCEL — where engineers become the people
+                            enterprises call when the AI actually has to work.</p>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="accordion custom-accordion" id="programAccordion">
+                        <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold bg-primary-theme text-white shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    What You Will Learn?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show bg-light-blue"
+                                aria-labelledby="headingOne" data-bs-parent="#programAccordion">
+                                <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13.5px;">
+                                    <p class="mb-4 text-dark opacity-75">This course focuses on production AI
+                                        engineering — fine-tuning, GraphRAG and multi-agent systems — built for
+                                        experienced engineers moving into forward-deployed and consulting roles.</p>
+
+                                    <h6 class="fw-bold text-dark mb-3">Modules:</h6>
+                                    <ul class="list-unstyled custom-check-list mb-4">
+                                        <li>Rapid Foundations to Deployed AI API</li>
+                                        <li>Advanced Systems — Fine-Tuning, RAG & Multi-Agent</li>
+                                        <li>Enterprise Integrations</li>
+                                        <li>Consulting Craft, Observability & Security</li>
+                                        <li>Capstone Project</li>
+                                    </ul>
+
+                                    <h6 class="fw-bold text-dark mb-3">Learning Outcomes:</h6>
+                                    <ul class="list-unstyled custom-check-list mb-4">
+                                        <li>Design and deploy production-grade AI systems end to end</li>
+                                        <li>Fine-tune models, build GraphRAG pipelines and orchestrate multi-agent systems</li>
+                                        <li>Scope, propose and deliver AI solutions as a consultant to enterprise clients</li>
+                                    </ul>
+
+                                    <div class="mb-1 text-dark opacity-75"><strong>Duration:</strong> 3 Months (3 Days / Week)</div>
+                                    <div class="mb-4 text-dark opacity-75"><strong>Timings:</strong> Live sessions, flexible slots</div>
+
+                                    <p class="mb-0 text-orange fw-bold">Become a forward deployed AI engineer.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Completed Key Highlights Accordion -->
+                        <div class="accordion-item border-0 rounded-2 overflow-hidden bg-light shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-dark shadow-none bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Key Highlights
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#programAccordion">
+                                <div class="accordion-body p-4 p-md-5 bg-white text-muted" style="font-size: 13.5px;">
+                                    <ul class="list-unstyled custom-check-list mb-0">
+                                        <li><strong>1:1 Senior Architect Mentorship:</strong> Weekly dedicated office hours and architecture design reviews with veteran enterprise AI practitioners.</li>
+                                        <li><strong>Zero Sandbox Toys:</strong> Deploy directly to dedicated cloud GPUs (vLLM, Triton) with production CI/CD, telemetry, and observability pipelines.</li>
+                                        <li><strong>Real-World RFP Client Simulations:</strong> Learn client discovery, scoping, SLA budgeting, security review, and statement-of-work (SOW) creation.</li>
+                                        <li><strong>NSDC Recognized Conformance Certificate:</strong> Validate your skills with an industry-backed credential for high-paying applied AI roles.</li>
+                                        <li><strong>Lifetime Career Community:</strong> Ongoing alumni referral pipeline, tech talks, and exclusive enterprise placement access.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content (Sticky Form) -->
+                <div class="col-lg-5">
+                    <div class="card shadow-lg border-0 rounded-4 sticky-top" style="top: 100px;">
+                        <div class="card-body p-4 p-md-5" id="leadFormContainer">
+                            <h3 class="fw-bolder mb-1 text-dark title-black">Launch Your AI Career</h3>
+                            <p class="fw-semibold text-muted mb-4 small">Apply to Our Next Cohort</p>
+
+                            <form id="leadForm" onsubmit="event.preventDefault(); handleLeadSubmit();">
+                                <div class="mb-3">
+                                    <label class="form-label text-muted mb-2" style="font-size:12px;">Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control rounded-1 py-2" id="form-name" placeholder="Enter name" style="font-size: 13px;" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-muted mb-2" style="font-size:12px;">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control rounded-1 py-2" id="form-email" placeholder="Enter email address" style="font-size: 13px;" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-muted mb-2" style="font-size:12px;">Mobile Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control rounded-1 py-2" id="form-phone" placeholder="Enter mobile number" style="font-size: 13px;" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label text-muted mb-2" style="font-size:12px;">Message</label>
+                                    <textarea class="form-control rounded-1 py-2" id="form-message" rows="3" placeholder="Tell us about your background or questions" style="font-size: 13px;"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-theme w-100 py-3 fw-bold rounded-1 tracking-wider" style="font-size:14px;">
+                                    SUBMIT
+                                </button>
+                            </form>
+                            
+                            <div id="leadSuccess" class="d-none text-center p-4 bg-light rounded-3 mt-3">
+                                <i class="fa-solid fa-circle-check text-success fs-1 mb-3"></i>
+                                <h5 class="fw-bold text-dark">Application Received!</h5>
+                                <p class="text-muted small mb-3">Our academic counselor will get in touch with you within 24 hours.</p>
+                                <button class="btn btn-outline-primary-theme btn-sm fw-bold" onclick="resetLeadForm()">Submit Another</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Advanced Topics Section -->
+    <section class="advanced-topics-section py-5">
+        <div class="container py-4">
+            <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 14px;">
+                Advanced topics
+            </div>
+
+            <h2 class="fw-bolder display-6 mb-3 text-dark title-black">AI Systems You'll Build</h2>
+            <p class="text-muted mb-5 max-w-700" style="font-size: 15px;">
+                Not a syllabus of buzzwords — every item below is implemented, tested and shipped inside a weekly deliverable.
+            </p>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-microchip me-2 fs-5 opacity-75"></i> AI Observability
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-sliders me-2 fs-5 opacity-75"></i> Fine-tuning
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-layer-group me-2 fs-5 opacity-75"></i> LoRA
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-network-wired me-2 fs-5 opacity-75"></i> MCP
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-bolt me-2 fs-5 opacity-75"></i> QLoRA
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-robot me-2 fs-5 opacity-75"></i> CrewAI
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-diagram-project me-2 fs-5 opacity-75"></i> LangGraph
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-circle-nodes me-2 fs-5 opacity-75"></i> GraphRAG
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-arrows-split-up-and-left me-2 fs-5 opacity-75"></i> A2A Orchestration
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-photo-film me-2 fs-5 opacity-75"></i> Multi-modal RAG
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-gears me-2 fs-5 opacity-75"></i> AI CI/CD
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-cloud me-2 fs-5 opacity-75"></i> Multi-cloud
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="topic-card border rounded-2 px-3 py-3 text-orange fw-medium d-flex align-items-center bg-white shadow-sm h-100" style="font-size: 14px;">
+                        <i class="fa-solid fa-shield-halved me-2 fs-5 opacity-75"></i> AI Security
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Capstone Section -->
+    <section class="capstone-section py-5 mb-5" id="capstone">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 14px;">
+                        Capstone
+                    </div>
+
+                    <h2 class="fw-bolder display-5 mb-4 text-dark title-black">A tough project. A real<br>deadline. No clear<br>answers.</h2>
+
+                    <p class="text-muted mb-4" style="font-size: 14px; line-height: 1.6;">
+                        Month 3 hands you an intentionally open-ended client-style RFP. You'll scope it, architect it,
+                        build it and demo it — the same ambiguity you'll meet on your first real engagement. Most teams
+                        land on one of four directions:
+                    </p>
+
+                    <button type="button" class="btn btn-primary-theme fw-bold px-4 py-3 rounded-1 mb-5" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                        Explore Now <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em"></i>
+                    </button>
+
+                    <div class="border rounded-4 p-4 p-md-5 shadow-sm bg-white" style="border-color: rgba(230, 139, 37, 0.2) !important;">
+                        <!-- List Item 1 -->
+                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom">
+                            <div class="bg-yellow rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                <i class="fa-regular fa-compass text-orange fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-orange mb-1">Enterprise Document Intelligence Platform</h6>
+                                <p class="text-muted mb-0 lh-base" style="font-size: 13px;">Ingest, classify and extract structured knowledge from unstructured enterprise documents at scale.</p>
+                            </div>
+                        </div>
+                        <!-- List Item 2 -->
+                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom">
+                            <div class="bg-yellow rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                <i class="fa-regular fa-compass text-orange fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-orange mb-1">AI Customer Support Copilot</h6>
+                                <p class="text-muted mb-0 lh-base" style="font-size: 13px;">A grounded, tool-using support agent that resolves tickets against live product and policy data.</p>
+                            </div>
+                        </div>
+                        <!-- List Item 3 -->
+                        <div class="d-flex align-items-start mb-4 pb-4 border-bottom">
+                            <div class="bg-yellow rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                <i class="fa-regular fa-compass text-orange fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-orange mb-1">Enterprise SQL & BI Copilot</h6>
+                                <p class="text-muted mb-0 lh-base" style="font-size: 13px;">Natural-language querying over a real warehouse schema, with guardrails and query verification.</p>
+                            </div>
+                        </div>
+                        <!-- List Item 4 -->
+                        <div class="d-flex align-items-start">
+                            <div class="bg-yellow rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 45px; height: 45px;">
+                                <i class="fa-regular fa-compass text-orange fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-orange mb-1">Team-scoped RFP Response</h6>
+                                <p class="text-muted mb-0 lh-base" style="font-size: 13px;">Respond to an ambiguous, client-style RFP as a team — architecture, build and client-ready proposal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative mt-5 mt-lg-0 pt-lg-5">
+                    <div class="position-relative ms-lg-4 mt-lg-4">
+                        <img src="assets/extracted_img_10.jpg" class="img-fluid rounded-4 shadow" alt="Students" style="height: 650px; width: 100%; object-fit: cover;">
+
+                        <!-- Floating Stats Card -->
+                        <div class="floating-stats-card bg-white rounded-4 shadow-lg p-3 position-absolute" style="bottom: 80px; left: -60px; width: 230px; z-index: 5;">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="text-muted fw-semibold" style="font-size: 11px;">8-15 Jan</div>
+                                    <div class="fw-bold fs-6">Week <i class="fa-solid fa-caret-down ms-1" style="font-size: 0.8em;"></i></div>
+                                </div>
+                                <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 28px; height: 28px;">
+                                    <i class="fa-solid fa-play ms-1" style="font-size: 11px;"></i>
+                                </div>
+                            </div>
+
+                            <!-- Graph area -->
+                            <div class="position-relative mt-4" style="height: 80px;">
+                                <div class="border-bottom border-light border-2 position-absolute w-100" style="top: 0; border-style: dashed !important;"></div>
+                                <div class="border-bottom border-light border-2 position-absolute w-100" style="top: 40px; border-style: dashed !important;"></div>
+                                <div class="border-bottom border-light border-2 position-absolute w-100" style="top: 80px; border-style: dashed !important;"></div>
+
+                                <div class="position-absolute end-0 text-muted" style="font-size: 10px; top: -7px; background: white; padding-left: 5px;">4K</div>
+                                <div class="position-absolute end-0 text-muted" style="font-size: 10px; top: 33px; background: white; padding-left: 5px;">2K</div>
+                                <div class="position-absolute end-0 text-muted" style="font-size: 10px; top: 73px; background: white; padding-left: 5px;">0</div>
+
+                                <svg width="100%" height="100%" viewBox="0 0 150 80" preserveAspectRatio="none" class="position-absolute start-0 top-0" style="width: calc(100% - 25px);">
+                                    <path d="M0,80 C40,80 60,60 100,20 L100,80 Z" fill="url(#gradient-purple)" opacity="0.3"></path>
+                                    <path d="M0,80 C40,80 60,60 100,20" fill="none" stroke="#673AB7" stroke-width="4" stroke-linecap="round"></path>
+                                    <defs>
+                                        <linearGradient id="gradient-purple" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#673AB7" stop-opacity="1" />
+                                            <stop offset="100%" stop-color="#673AB7" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <div class="position-absolute text-primary rounded-pill fw-bold bg-white px-2 py-1" style="font-size: 11px; color: #673AB7 !important; top: 5px; left: 30px; box-shadow: 0 2px 5px rgba(103, 58, 183, 0.2);">
+                                    +60%
+                                </div>
+                                <div class="position-absolute rounded-circle border border-2 border-white shadow-sm" style="width: 14px; height: 14px; top: 45px; left: 65px; background-color: #673AB7;"></div>
+                            </div>
+
+                            <div class="mt-4 pt-2 text-muted fw-medium" style="font-size: 12px;">
+                                New students
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Career Outcomes Section -->
+    <section class="career-outcomes-section py-5 bg-white" id="outcomes">
+        <div class="container py-4">
+            <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 14px;">
+                Career outcomes
+            </div>
+
+            <h2 class="fw-bolder display-6 mb-3 text-dark title-black">Where Our Graduates Work</h2>
+            <p class="text-muted mb-5 max-w-700" style="font-size: 15px;">
+                The program is scoped around five roles that experienced engineers move into after building production AI systems end to end.
+            </p>
+
+            <div class="row flex-nowrap overflow-auto flex-lg-wrap g-4 pb-4 px-2">
+                <!-- Card 1 -->
+                <div class="col-9 col-md-5 col-lg-3 col-xl-2" style="min-width: 220px;">
+                    <div class="card h-100 border rounded-3 overflow-hidden shadow-sm">
+                        <img src="assets/extracted_img_16.png" class="card-img-top object-fit-cover" alt="AI Architect" style="height: 120px;"
+                            onerror="this.onerror=null; this.src='assets/extracted_img_4.jpg';">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="badge bg-light-cyan text-cyan rounded-1 fw-medium" style="font-size: 10px;">Premium</span>
+                                <span class="badge bg-light-pink text-pink rounded-1 fw-medium" style="font-size: 10px;">All Levels</span>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 14px;">AI Architect</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-9 col-md-5 col-lg-3 col-xl-2" style="min-width: 220px;">
+                    <div class="card h-100 border rounded-3 overflow-hidden shadow-sm">
+                        <img src="assets/extracted_img_17.png" class="card-img-top object-fit-cover" alt="AI Consultant" style="height: 120px;"
+                            onerror="this.onerror=null; this.src='assets/extracted_img_5.jpg';">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="badge bg-light-cyan text-cyan rounded-1 fw-medium" style="font-size: 10px;">Premium</span>
+                                <span class="badge bg-light-pink text-pink rounded-1 fw-medium" style="font-size: 10px;">All Levels</span>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 14px;">AI Consultant</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-9 col-md-5 col-lg-3 col-xl-2" style="min-width: 220px;">
+                    <div class="card h-100 border rounded-3 overflow-hidden shadow-sm">
+                        <img src="assets/extracted_img_18.png" class="card-img-top object-fit-cover" alt="AI Platform Engineer" style="height: 120px;"
+                            onerror="this.onerror=null; this.src='assets/extracted_img_6.jpg';">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="badge bg-light-cyan text-cyan rounded-1 fw-medium" style="font-size: 10px;">Premium</span>
+                                <span class="badge bg-light-pink text-pink rounded-1 fw-medium" style="font-size: 10px;">All Levels</span>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 14px;">AI Platform Engineer</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-9 col-md-5 col-lg-3 col-xl-2" style="min-width: 220px;">
+                    <div class="card h-100 border rounded-3 overflow-hidden shadow-sm">
+                        <img src="assets/extracted_img_4.jpg" class="card-img-top object-fit-cover" alt="Enterprise AI Engineer" style="height: 120px;">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="badge bg-light-cyan text-cyan rounded-1 fw-medium" style="font-size: 10px;">Premium</span>
+                                <span class="badge bg-light-pink text-pink rounded-1 fw-medium" style="font-size: 10px;">All Levels</span>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 14px;">Enterprise AI Engineer</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-9 col-md-5 col-lg-3 col-xl-3" style="min-width: 220px;">
+                    <div class="card h-100 border rounded-3 overflow-hidden shadow-sm">
+                        <img src="assets/extracted_img_5.jpg" class="card-img-top object-fit-cover" alt="Staff / Lead Applied AI Engineer" style="height: 120px;">
+                        <div class="card-body p-3">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="badge bg-light-cyan text-cyan rounded-1 fw-medium" style="font-size: 10px;">Premium</span>
+                                <span class="badge bg-light-pink text-pink rounded-1 fw-medium" style="font-size: 10px;">All Levels</span>
+                            </div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 14px;">Staff / Lead Applied AI Engineer</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Complete Interactive Curriculum Section -->
+    <section class="curriculum-section py-5 my-3" id="curriculum">
+        <div class="container py-4">
+            <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1 text-uppercase tracking-wider" style="font-size: 12px;">
+                curriculum
+            </div>
+
+            <h2 class="fw-bolder display-5 mb-3 text-dark title-black">Twelve weeks. Three arcs. Zero filler.</h2>
+            <p class="text-muted mb-5" style="font-size: 15px;">
+                Expand any week for its day-by-day build topics and the deliverable that ships by Friday.
+            </p>
+
+            <!-- Month Tabs with JavaScript Switcher -->
+            <div class="row g-3 mb-5" id="monthTabsContainer">
+                <div class="col-md-4">
+                    <div class="month-tab active-tab" onclick="switchMonth(1)" id="tab-month-1">
+                        <div class="text-orange" style="font-size: 14px;">Month 1</div>
+                        <div class="text-orange fw-medium mt-1">Rapid Foundations to Deployed AI API</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="month-tab inactive-tab" onclick="switchMonth(2)" id="tab-month-2">
+                        <div class="text-orange" style="font-size: 14px;">Month 2</div>
+                        <div class="text-orange fw-medium mt-1">Advanced Systems</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="month-tab inactive-tab" onclick="switchMonth(3)" id="tab-month-3">
+                        <div class="text-orange" style="font-size: 14px;">Month 3</div>
+                        <div class="text-orange fw-medium mt-1">Deployment, Consulting & Capstone</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 1 Weeks (Default Visible) -->
+            <div class="month-content-block" id="month-content-1">
+                <div class="accordion curriculum-accordion" id="weekAccordionM1">
+                    <!-- Week 1 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w1Head">
+                            <button class="accordion-button fw-bold text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w1Body" aria-expanded="true" aria-controls="w1Body">
+                                W01 — FDE Fundamentals + Rapid Backend Build
+                            </button>
+                        </h2>
+                        <div id="w1Body" class="accordion-collapse collapse show bg-light-blue" aria-labelledby="w1Head" data-bs-parent="#weekAccordionM1">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div>
+                                        <span class="text-dark">FDE role, mindset & client lifecycle</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div>
+                                        <span class="text-dark">API-first backend architecture</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div>
+                                        <span class="text-dark">Ship a deployed AI API end-to-end</span>
+                                    </li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Deployed AI API (live endpoint)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 2 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w2Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w2Body" aria-expanded="false" aria-controls="w2Body">
+                                W02 — Context Engineering + Client Discovery
+                            </button>
+                        </h2>
+                        <div id="w2Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w2Head" data-bs-parent="#weekAccordionM1">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Prompt optimization & dynamic context routing</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Structuring client problem into LLM interfaces</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Evaluation benchmarks and token budget management</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Production-ready Context Engine</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 3 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w3Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w3Body" aria-expanded="false" aria-controls="w3Body">
+                                W03 — Vector Search, Hybrid Indexing & RAG at Scale
+                            </button>
+                        </h2>
+                        <div id="w3Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w3Head" data-bs-parent="#weekAccordionM1">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Chunking heuristics and embeddings comparison</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Hybrid search with re-ranking (BM25 + Dense embeddings)</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Query rewriting and metadata filtering</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Enterprise RAG Service</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 4 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w4Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w4Body" aria-expanded="false" aria-controls="w4Body">
+                                W04 — GraphRAG & Complex Knowledge Synthesis
+                            </button>
+                        </h2>
+                        <div id="w4Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w4Head" data-bs-parent="#weekAccordionM1">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Knowledge graph construction from raw documents</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Community detection and graph extraction algorithms</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Graph-augmented retrieval synthesis and multi-hop querying</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: GraphRAG Query Engine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 2 Weeks -->
+            <div class="month-content-block d-none" id="month-content-2">
+                <div class="accordion curriculum-accordion" id="weekAccordionM2">
+                    <!-- Week 5 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w5Head">
+                            <button class="accordion-button fw-bold text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w5Body" aria-expanded="true" aria-controls="w5Body">
+                                W05 — Parameter Efficient Fine-Tuning (LoRA & QLoRA)
+                            </button>
+                        </h2>
+                        <div id="w5Body" class="accordion-collapse collapse show bg-light-blue" aria-labelledby="w5Head" data-bs-parent="#weekAccordionM2">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Dataset curation, formatting & deduplication</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Quantization, rank selection and trainer configuration</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Loss curve diagnostics and checkpoint evaluation</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Fine-tuned Specialized Domain Model</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 6 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w6Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w6Body" aria-expanded="false" aria-controls="w6Body">
+                                W06 — Multi-Agent Systems with LangGraph & CrewAI
+                            </button>
+                        </h2>
+                        <div id="w6Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w6Head" data-bs-parent="#weekAccordionM2">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">State machines, cyclic graphs & checkpointing</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Inter-agent protocols and tool-calling validation</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Autonomous task delegation and error fallback loops</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Autonomous Multi-Agent Support Team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 7 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w7Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w7Body" aria-expanded="false" aria-controls="w7Body">
+                                W07 — Multimodal Intelligence & Audio/Vision Pipelines
+                            </button>
+                        </h2>
+                        <div id="w7Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w7Head" data-bs-parent="#weekAccordionM2">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Vision-language models for document OCR & layout analysis</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Streaming speech-to-text and low-latency audio processing</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Multimodal vector indexing across image, audio and text</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Multimodal Video & PDF Copilot</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 8 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w8Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w8Body" aria-expanded="false" aria-controls="w8Body">
+                                W08 — AI Security, Guardrails & Jailbreak Defense
+                            </button>
+                        </h2>
+                        <div id="w8Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w8Head" data-bs-parent="#weekAccordionM2">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Prompt injection, indirect poisoning & data leak testing</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Llama Guard, NeMo Guardrails & semantic verifiers</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">PII masking and compliant audit logs for enterprise SOC2</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Hardened Secure Enterprise AI Gateway</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 3 Weeks -->
+            <div class="month-content-block d-none" id="month-content-3">
+                <div class="accordion curriculum-accordion" id="weekAccordionM3">
+                    <!-- Week 9 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w9Head">
+                            <button class="accordion-button fw-bold text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w9Body" aria-expanded="true" aria-controls="w9Body">
+                                W09 — Observability, Tracing & Cost Engineering
+                            </button>
+                        </h2>
+                        <div id="w9Body" class="accordion-collapse collapse show bg-light-blue" aria-labelledby="w9Head" data-bs-parent="#weekAccordionM3">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">OpenTelemetry, Langfuse & Phoenix distributed tracing</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Semantic caching with Redis & embedding similarity</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Latency budgeting and GPU inference unit economics</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Production Tracing & Observability Dashboard</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 10 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w10Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w10Body" aria-expanded="false" aria-controls="w10Body">
+                                W10 — Enterprise Integration & Cloud Deployments (vLLM / Triton)
+                            </button>
+                        </h2>
+                        <div id="w10Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w10Head" data-bs-parent="#weekAccordionM3">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Containerized deployment with vLLM & continuous batching</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Kubernetes orchestration and autoscaling policies</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Enterprise CRM & ERP webhook integration</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: High-Throughput Hosted Inference Cluster</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 11 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w11Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w11Body" aria-expanded="false" aria-controls="w11Body">
+                                W11 — Consulting Craft & Scoping Ambiguous RFPs
+                            </button>
+                        </h2>
+                        <div id="w11Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w11Head" data-bs-parent="#weekAccordionM3">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Client scoping discovery interviews & architecture memos</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Technical estimation, feasibility audits & SLA agreements</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Live stakeholder presentation & executive pitch defense</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Enterprise AI Architectural Proposal & SOW</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Week 12 -->
+                    <div class="accordion-item border-0 mb-3 rounded-2 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header" id="w12Head">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#w12Body" aria-expanded="false" aria-controls="w12Body">
+                                W12 — Capstone Demo Day & Executive Defense
+                            </button>
+                        </h2>
+                        <div id="w12Body" class="accordion-collapse collapse bg-light-blue" aria-labelledby="w12Head" data-bs-parent="#weekAccordionM3">
+                            <div class="accordion-body p-4 p-md-5 text-muted" style="font-size: 13px;">
+                                <ul class="list-unstyled mb-4 week-list">
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">01</div><span class="text-dark">Full integration testing, load tests & chaos injection checks</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">02</div><span class="text-dark">Live client-style demo rehearsal and system fallback checks</span></li>
+                                    <li class="d-flex align-items-center mb-3"><div class="bg-primary-theme text-white rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 24px; height: 24px; font-size: 10px; font-weight: bold;">03</div><span class="text-dark">Capstone graduation presentation to industry architects</span></li>
+                                </ul>
+                                <div class="text-orange mt-4 fw-medium">Deliverable: Shipped Production System & Certification</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Why Choose Section -->
+    <section class="why-choose-section py-5" style="background-color: #FDF9F1;" id="why-choose">
+        <div class="container py-5 mt-4 mb-4">
+            <div class="text-center mb-5 max-w-900 mx-auto">
+                <h2 class="fw-bolder display-5 mb-5 text-dark title-black">Why Choose Softroniics?</h2>
+
+                <p class="text-muted mb-4 mx-auto" style="font-size: 15px; line-height: 1.8; max-width: 900px; color: #555 !important;">
+                    At softroniics FDE-ACCEL is an excellent choice for any experienced engineer looking to master
+                    forward deployed AI engineering. Going through the Experienced Track with FDE-ACCEL offers a
+                    comprehensive learning experience that combines deep technical grounding with real client-facing
+                    craft. FDE-ACCEL provides a rich learning environment with production-grade infrastructure and live,
+                    ambiguous-RFP style projects — not sandboxed tutorials.
+                </p>
+
+                <p class="text-muted mx-auto" style="font-size: 15px; line-height: 1.8; max-width: 900px; color: #555 !important;">
+                    During the program, you will work alongside senior mentors who've shipped AI systems into real
+                    enterprise environments, and learn to build production AI systems using fine-tuning, GraphRAG,
+                    multi-agent orchestration and enterprise integrations. You will gain hands-on experience across the
+                    full stack of forward deployed work — model internals, cloud deployment, observability and security,
+                    and the consulting craft of scoping, proposing and negotiating client engagements.
+                </p>
+            </div>
+
+            <!-- Orange Banner -->
+            <div class="rounded-4 p-4 p-md-5 text-center mx-auto mt-5 shadow-sm" style="background-color: #F9A424; max-width: 950px;">
+                <h3 class="fw-bold text-white mb-4 lh-base" style="font-size: 34px;">
+                    Don't delay any further! Begin one of<br>our top-notch courses instructed by the best
+                </h3>
+
+                <div class="mb-5 d-flex align-items-center justify-content-center flex-wrap text-white" style="font-size: 16px;">
+                    <span class="me-2 fw-medium">If You Have Any Questions Call Us /</span>
+                    <a href="https://wa.me/919037291113" target="_blank" class="text-dark fw-bold d-flex align-items-center text-decoration-none">
+                        <i class="fa-brands fa-whatsapp fs-5 mx-1 text-dark"></i> WhatsApp On +91 9037-29-1113
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center flex-wrap gap-4 mt-2">
+                    <button type="button" class="btn bg-white px-5 py-3 fw-bold rounded-1" style="color: #F9A424; font-size: 15px;" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                        Register Now
+                    </button>
+                    <div class="text-start d-flex flex-column justify-content-center ms-3">
+                        <span class="text-dark fw-semibold" style="font-size: 12px; margin-bottom: -2px;">Call Us</span>
+                        <a href="tel:+919037291113" class="text-white fw-bold fs-5 text-decoration-none">+91 9037-29-1113</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Companies Section -->
+    <section class="companies-section py-5 bg-white text-center" id="partners">
+        <div class="container py-4 mt-3">
+            <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 14px;">
+                Our trainers & partners
+            </div>
+
+            <h2 class="fw-bolder display-6 mb-3 text-dark title-black">Companies Our Graduates Have Joined</h2>
+            <p class="text-muted mb-5 max-w-900 mx-auto" style="font-size: 15px;">
+                Softroniics has a diverse range of global hiring partners across various industries. Our graduates have
+                been placed in top-tier companies, and our continuous partnerships provide better career opportunities
+                for our students.
+            </p>
+
+            <!-- Company Logos Grid -->
+            <div class="row row-cols-2 row-cols-md-4 g-4 align-items-center justify-content-center mb-5 pb-5 mt-3">
+                <div class="col text-center">
+                    <img src="assets/extracted_img_19.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_6.png';">
+                </div>
+                <div class="col text-center">
+                    <img src="assets/extracted_img_20.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_7.png';">
+                </div>
+                <div class="col text-center">
+                    <img src="assets/extracted_img_21.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_8.png';">
+                </div>
+                <div class="col text-center">
+                    <img src="assets/extracted_img_22.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_9.png';">
+                </div>
+                <div class="col text-center mt-5">
+                    <img src="assets/extracted_img_23.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_10.png';">
+                </div>
+                <div class="col text-center mt-5">
+                    <img src="assets/extracted_img_24.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_11.png';">
+                </div>
+                <div class="col text-center mt-5">
+                    <img src="assets/extracted_img_25.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_12.png';">
+                </div>
+                <div class="col text-center mt-5">
+                    <img src="assets/extracted_img_26.png" class="img-fluid" style="max-height: 50px; object-fit: contain;" alt="Partner Logo"
+                        onerror="this.onerror=null; this.src='assets/extracted_img_13.png';">
+                </div>
+            </div>
+
+            <!-- 13. Dark Banner CTA -->
+            <div class="dark-cta-banner rounded-4 text-center mx-auto position-relative overflow-hidden mb-5"
+                style="background-color: #0A0A0A; max-width: 950px; padding: 100px 40px; border-radius: 20px !important;">
+                <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
+                    style="top: 0; left: 0; pointer-events: none; opacity: 0.15;">
+                    <span class="fw-bolder" style="font-size: 280px; line-height: 1; letter-spacing: -5px; color: #333;">AI</span>
+                </div>
+
+                <div class="position-relative z-index-1">
+                    <h3 class="fw-bolder text-white mb-4 lh-base mx-auto" style="font-size: 40px; max-width: 700px;">
+                        Learn from top professionals<br>worldwide.
+                    </h3>
+
+                    <p class="text-white opacity-75 mb-5 mx-auto fw-medium" style="font-size: 15px; line-height: 1.6; max-width: 700px;">
+                        We ensure our students receive consistent guidance on their projects throughout various stages
+                        via regular classes and detailed technical support.
+                    </p>
+
+                    <div class="d-flex align-items-center justify-content-center flex-wrap gap-4 mt-2">
+                        <button type="button" class="btn btn-primary-theme px-4 py-3 fw-bold rounded-1" style="font-size: 15px;" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                            Enroll Now <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em"></i>
+                        </button>
+                        <div class="text-start d-flex flex-column justify-content-center ms-2">
+                            <span class="text-orange fw-semibold" style="font-size: 12px; margin-bottom: -2px;">Call Us</span>
+                            <a href="tel:+919037291113" class="text-white fw-bold fs-5 text-decoration-none">+91 9037-29-1113</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. Meet Our Mentors -->
+    <section class="mentors-section py-5" style="background-color: #FAFAFA;" id="mentors">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 14px;">
+                    Meet the team
+                </div>
+                <h2 class="fw-bolder display-5 mb-3 text-dark title-black">Meet our Mentors</h2>
+                <p class="text-muted mx-auto max-w-700" style="font-size: 15px;">
+                    We are all aware of the fact that getting an Engineering degree from a good college matters a lot, but the degree won’t hold much of a value if you are not able to apply the knowledge.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Mentor 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="mentor-card">
+                        <div class="mentor-portrait-wrap">
+                            <img src="assets/extracted_img_28.png" alt="Neeraj Nirala" class="mentor-portrait-img"
+                                onerror="this.onerror=null; this.src='assets/extracted_img_4.jpg';">
+                        </div>
+                        <div class="mentor-info-card">
+                            <h4 class="fw-bold text-dark mb-1 fs-5">Neeraj Nirala</h4>
+                            <div class="text-orange fw-bold small mb-1">Technical Architect</div>
+                            <div class="text-muted" style="font-size: 12.5px;">15 Years of Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mentor 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="mentor-card">
+                        <div class="mentor-portrait-wrap">
+                            <img src="assets/extracted_img_29.png" alt="Arjun M.S" class="mentor-portrait-img"
+                                onerror="this.onerror=null; this.src='assets/extracted_img_5.jpg';">
+                        </div>
+                        <div class="mentor-info-card">
+                            <h4 class="fw-bold text-dark mb-1 fs-5">Arjun M.S</h4>
+                            <div class="text-orange fw-bold small mb-1">AI Solution Architect</div>
+                            <div class="text-muted" style="font-size: 12.5px;">13 Years of Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mentor 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="mentor-card">
+                        <div class="mentor-portrait-wrap">
+                            <img src="assets/extracted_img_30.png" alt="Midhun G S" class="mentor-portrait-img"
+                                onerror="this.onerror=null; this.src='assets/extracted_img_6.jpg';">
+                        </div>
+                        <div class="mentor-info-card">
+                            <h4 class="fw-bold text-dark mb-1 fs-5">Midhun G S</h4>
+                            <div class="text-orange fw-bold small mb-1">Technical Architect</div>
+                            <div class="text-muted" style="font-size: 12.5px;">13 Years of Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Testimonials -->
+    <section class="testimonials-section py-5 bg-white" id="testimonials">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div>
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-2 rounded-1" style="font-size: 13px;">
+                        Students Love
+                    </div>
+                    <h2 class="fw-bolder display-5 mb-2 text-dark title-black">WHAT OUR ENGINEERS SAY</h2>
+                    <p class="text-muted mb-0" style="font-size: 14.5px;">
+                        Real experiences from developers who launched their careers as forward deployed AI engineers.
+                    </p>
+                </div>
+                <!-- Controls -->
+                <div class="d-flex gap-2 mt-4 mt-md-0">
+                    <button type="button" class="testimonial-circle-btn" onclick="prevTestimonial()" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button type="button" class="testimonial-circle-btn" onclick="nextTestimonial()" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Testimonial Carousel Card -->
+            <div class="testimonial-card-main p-4 p-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-4 text-center">
+                        <img src="assets/extracted_img_10.jpg" alt="Student Reviewer" id="testimonial-photo" class="rounded-4 img-fluid shadow-sm" style="max-height: 320px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-8 ps-lg-4">
+                        <div class="mb-3">
+                            <span class="quote-speech-bubble" id="testimonial-badge">Professional Track</span>
+                        </div>
+                        <p class="fs-5 text-dark fw-medium lh-base mb-4" id="testimonial-text">
+                            "My experience with Softroniics’ AI Forward Deployed Engineering program has been really valuable. The program focuses not just on learning AI concepts, but on understanding how AI can be applied to solve real-world problems. What I especially liked was the practical approach, hands-on learning, and exposure to real project scenarios."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="assets/extracted_img_11.jpg" alt="Avatar" id="testimonial-avatar" class="rounded-circle me-3 border" style="width: 50px; height: 50px; object-fit: cover;"
+                                onerror="this.onerror=null; this.src='assets/extracted_img_6.jpg';">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-0" id="testimonial-name">Emma Rodriguez</h5>
+                                <div class="text-warning small mt-1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. NSDC Conformance Certificate -->
+    <section class="certificate-section py-5" style="background-color: #FDF9F1;" id="certificate">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="certificate-frame p-2">
+                        <img src="assets/extracted_img_11.jpg" alt="Softroniics Conformance Certificate NSDC" class="img-fluid rounded-2 w-100" style="object-fit: cover; max-height: 420px;"
+                            onerror="this.onerror=null; this.src='assets/extracted_img_12.png';">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1" style="font-size: 13.5px;">
+                        Certified Credential
+                    </div>
+                    <h2 class="fw-bolder display-5 mb-4 text-dark title-black">Earn Your AI Engineering Certificate</h2>
+                    <p class="text-muted mb-4" style="font-size: 15px; line-height: 1.7;">
+                        Don't hesitate, take the first step towards a brighter future by enrolling in one of our top-notch courses taught by the best in the industry! Our certifications are recognized by leading enterprise hiring partners across India and the GCC.
+                    </p>
+                    <div class="d-flex align-items-center flex-wrap gap-4 pt-2">
+                        <button type="button" class="btn btn-primary-theme fw-bold px-4 py-3 rounded-1" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                            Apply Today <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size:0.8em"></i>
+                        </button>
+                        <div>
+                            <span class="text-orange d-block fw-semibold" style="font-size: 12px;">Call Us / WhatsApp On</span>
+                            <a href="tel:+919037291113" class="fw-bold text-dark fs-5 text-decoration-none">+91 9037-29-1113</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. Frequently Asked Questions (FAQ) -->
+    <section class="faq-section py-5 bg-white" id="faq">
+        <div class="container py-4">
+            <div class="row g-5">
+                <!-- Left Info & Contact Card -->
+                <div class="col-lg-5 pe-lg-4">
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-2 fw-semibold mb-3 rounded-1 text-uppercase" style="font-size: 13px;">
+                        FAQS
+                    </div>
+                    <h2 class="fw-bolder display-6 mb-3 text-dark title-black">
+                        <span class="text-orange">Answers</span> to Your Most Common Questions
+                    </h2>
+                    <p class="text-muted mb-4" style="font-size: 15px; line-height: 1.6;">
+                        Find quick, clear answers to the questions we get asked the most. Whether you're exploring AI solutions or ready to start, we've got you covered.
+                    </p>
+
+                    <div class="p-4 rounded-3 border bg-light shadow-sm mt-4">
+                        <div class="icon-orange rounded-circle text-white d-flex align-items-center justify-content-center mb-3">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h5 class="fw-bold text-dark mb-2">Still Have Questions?</h5>
+                        <p class="text-muted small mb-3">Let's talk and find the perfect AI solution or track for your career goals.</p>
+                        <button type="button" class="btn btn-outline-primary-theme btn-sm fw-bold px-3 py-2" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                            Contact Us <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Accordion -->
+                <div class="col-lg-7">
+                    <div class="accordion faq-accordion" id="faqMainAccordion">
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq1Head">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1Body" aria-expanded="true" aria-controls="faq1Body">
+                                    <span class="faq-num-badge">01</span> What types of AI solutions do you teach in this program?
+                                </button>
+                            </h2>
+                            <div id="faq1Body" class="accordion-collapse collapse show" aria-labelledby="faq1Head" data-bs-parent="#faqMainAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 14px; line-height: 1.6;">
+                                    We cover production-grade AI systems including LLM fine-tuning (LoRA, QLoRA), enterprise GraphRAG, autonomous multi-agent pipelines with LangGraph & CrewAI, AI security & guardrails, and cloud deployment with vLLM on dedicated GPUs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq2Head">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2Body" aria-expanded="false" aria-controls="faq2Body">
+                                    <span class="faq-num-badge">02</span> What is the cohort schedule and time commitment?
+                                </button>
+                            </h2>
+                            <div id="faq2Body" class="accordion-collapse collapse" aria-labelledby="faq2Head" data-bs-parent="#faqMainAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 14px; line-height: 1.6;">
+                                    The program spans 3 months (12 weeks), running 4 days per week with both weekday evening and weekend slot options for working professionals. Each week includes 3 live build sessions plus 1 mentor office hour.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq3Head">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3Body" aria-expanded="false" aria-controls="faq3Body">
+                                    <span class="faq-num-badge">03</span> Do I need prior Machine Learning or AI experience?
+                                </button>
+                            </h2>
+                            <div id="faq3Body" class="accordion-collapse collapse" aria-labelledby="faq3Head" data-bs-parent="#faqMainAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 14px; line-height: 1.6;">
+                                    This track is optimized for developers with at least 1-2 years of software engineering or backend experience (Python, JavaScript/TypeScript, Go, or Java). Prior deep learning knowledge is not required as we start with foundational architecture before moving into advanced systems.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq4Head">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4Body" aria-expanded="false" aria-controls="faq4Body">
+                                    <span class="faq-num-badge">04</span> How do Capstone projects work with real RFPs?
+                                </button>
+                            </h2>
+                            <div id="faq4Body" class="accordion-collapse collapse" aria-labelledby="faq4Head" data-bs-parent="#faqMainAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 14px; line-height: 1.6;">
+                                    In Month 3, you are given an intentionally ambiguous, enterprise-grade RFP specification. You and your team scope the architecture, negotiate trade-offs, implement the solution with CI/CD and observability, and present it live to practicing architects on Demo Day.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq5Head">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5Body" aria-expanded="false" aria-controls="faq5Body">
+                                    <span class="faq-num-badge">05</span> Is placement assistance provided after graduation?
+                                </button>
+                            </h2>
+                            <div id="faq5Body" class="accordion-collapse collapse" aria-labelledby="faq5Head" data-bs-parent="#faqMainAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 14px; line-height: 1.6;">
+                                    Yes. Softroniics has an active network of over 100+ hiring partners across India and the GCC. Our dedicated career support team assists with resume optimization, technical portfolio reviews, and direct interview referrals.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. Hub Section -->
+    <section class="footer-section pt-5 pb-5 position-relative" id="hub">
+        <!-- Subtle Grid Background -->
+        <div class="footer-grid-bg"></div>
+
+        <div class="container-hub position-relative py-4" style="z-index: 2;">
+            <!-- Center Top Banner -->
+            <div class="text-center mb-5 max-w-900 mx-auto">
+                <div class="badge-applications-open mb-3">
+                    Applications open
+                </div>
+                <h2 class="footer-hero-title text-white mb-4">
+                    Stop learning AI in isolation.<br>
+                    Start engineering it for the real world.
+                </h2>
+                <a href="#apply" class="btn btn-footer-apply text-white" data-bs-toggle="modal" data-bs-target="#modalEnquiry">
+                    Apply Now <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="ms-1"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+
+            <!-- Hub Showcase Row: World Map & Our Hub Card -->
+            <div class="hub-showcase-row">
+                <!-- Map with Pins (Left Column) -->
+                <div class="hub-map-col">
+                    <div class="hub-map-canvas">
+                        <img src="assets/hub_map_with_pins.svg" class="hub-vector-map"
+                            alt="Softroniics Hubs: Calicut, Perinthalmanna, Palakkad">
+                    </div>
+                </div>
+
+                <!-- Our Hub Card (Right Column) -->
+                <div class="hub-card-col">
+                    <div class="our-hub-card">
+                        <!-- Floating Rotating Contact Stamp Badge -->
+                        <a href="tel:+919995125959" class="contact-stamp-badge text-decoration-none" title="Contact Us">
+                            <svg viewBox="0 0 120 120" width="100%" height="100%">
+                                <circle cx="60" cy="60" r="54" fill="#E88F1B" />
+                                <g class="badge-spin-text">
+                                    <path id="badgePath" d="M 60, 60 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" fill="none" />
+                                    <text fill="white" font-size="8.8" font-weight="700" letter-spacing="2.6px">
+                                        <textPath href="#badgePath" startOffset="50%" text-anchor="middle">
+                                            CONTACT US • CONTACT US •
+                                        </textPath>
+                                    </text>
+                                </g>
+                                <path d="M52 68 L68 52 M68 52 H56 M68 52 V64" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+
+                        <div class="our-hub-inner">
+                            <!-- Hub Details Column -->
+                            <div class="hub-info-col">
+                                <h3 class="hub-card-heading">Our Hub</h3>
+                                <h4 class="hub-card-subheading">Kochi</h4>
+                                <a href="https://softroniics.com" target="_blank" class="hub-website-link">
+                                    Softroniics <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8em;"></i>
+                                </a>
+
+                                <address class="hub-address">
+                                    Chiyezhath Tower<br>
+                                    Mahatma Gandhi Rd<br>
+                                    Padma Junction, North Kaloor<br>
+                                    Kacheripady, Kochi, Ernakulam<br>
+                                    Kerala 682035
+                                </address>
+
+                                <div class="hub-contacts">
+                                    <a href="tel:+919995125959" class="hub-contact-val">+91 99951 25959</a>
+                                    <a href="mailto:info@softroniics.com" class="hub-contact-val">info@softroniics.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Hub Images Gallery Collage -->
+                            <div class="hub-photos-col">
+                                <!-- Photo 1: Glass Corridor (Tall) -->
+                                <div class="hub-photo-item hub-photo-tall">
+                                    <img src="assets/hub_corridor.jpg" alt="Softroniics Modern Campus Corridor"
+                                        onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80'">
+                                </div>
+                                <!-- Photo 2: Meeting Room (Short, Bottom-Aligned) -->
+                                <div class="hub-photo-item hub-photo-short">
+                                    <img src="assets/hub_meeting.jpg" alt="Meeting Room Team Discussion"
+                                        onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80'">
+                                </div>
+                                <!-- Photo 3: Desk & Chair (Tall) -->
+                                <div class="hub-photo-item hub-photo-tall">
+                                    <img src="assets/hub_laptop.jpg" alt="Workstation Setup"
+                                        onerror="this.src='https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80'">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. Main Skyscraper Footer Section -->
+    <footer class="main-footer-section pt-5 pb-4 position-relative">
+        <!-- Dark Overlay -->
+        <div class="main-footer-overlay"></div>
+
+        <div class="container position-relative pt-3" style="z-index: 2;">
+            <div class="row g-4 justify-content-between">
+                <!-- Column 1: Need Help? -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="main-footer-title">Need Help?</h5>
+                    <p class="mb-4" style="color: #B5B5B5; font-size: 13.5px; line-height: 1.6;">
+                        Want to know more about our courses?<br>
+                        Talk to our Academic Advisors
+                    </p>
+                    <div class="d-flex flex-column gap-3">
+                        <a href="tel:+919037291113" class="main-footer-contact-link">
+                            <i class="fa-solid fa-phone text-orange me-2"></i> +91 9037-29-1113
+                        </a>
+                        <a href="mailto:info@softroniics.com" class="main-footer-contact-link">
+                            <i class="fa-solid fa-envelope text-orange me-2"></i> info@softroniics.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="col-6 col-md-6 col-lg-2 offset-lg-1">
+                    <h5 class="main-footer-title">Navigation</h5>
+                    <ul class="main-footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#overview">Training</a></li>
+                        <li><a href="#capstone">Internship</a></li>
+                        <li><a href="#partners">Placements</a></li>
+                        <li class="pt-2"><a href="#testimonials">Events</a></li>
+                        <li><a href="#faq">Blog</a></li>
+                        <li><a href="#hub">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Training -->
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="main-footer-title">Training</h5>
+                    <ul class="main-footer-links">
+                        <li><a href="#overview">Front End Development</a></li>
+                        <li><a href="#overview">UI/UX</a></li>
+                        <li><a href="#overview">Digital Marketing</a></li>
+                        <li><a href="#overview">Flutter</a></li>
+                        <li><a href="#overview">Python</a></li>
+                        <li><a href="#overview">Laravel</a></li>
+                        <li><a href="#overview">Data Science</a></li>
+                        <li><a href="#overview">MERN Fullstack</a></li>
+                        <li class="pt-2"><a href="#overview">AI forward deployed engineering</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Follow Us -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="main-footer-title">Follow Us</h5>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <a href="https://linkedin.com" target="_blank" class="main-footer-social-btn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="main-footer-social-btn" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="main-footer-social-btn" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="main-footer-social-btn" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="main-footer-social-btn" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="main-footer-divider">
+
+            <!-- Copyright and Legal Links Row -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 pb-2">
+                <div class="text-white-50" style="font-size: 13px;">
+                    © 2026 Softroniics. All Rights Reserved.
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#terms" class="main-footer-legal-link">Terms of Use</a>
+                    <a href="#privacy" class="main-footer-legal-link">Privacy Policy</a>
+                    <a href="#refund" class="main-footer-legal-link">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 20. Interactive Bootstrap Enquiry Modal -->
+    <div class="modal fade" id="modalEnquiry" tabindex="-1" aria-labelledby="modalEnquiryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 px-md-5 pt-0 pb-4">
+                    <div class="d-inline-block bg-yellow text-orange px-3 py-1 fw-bold rounded-1 small mb-3">
+                        Admissions Open
+                    </div>
+                    <h3 class="fw-bolder text-dark mb-1 title-black" id="modalEnquiryLabel">Apply For Next Cohort</h3>
+                    <p class="text-muted small mb-4">Complete the form below to receive syllabus, fee details & schedule your 1:1 technical consult.</p>
+
+                    <form id="modalForm" onsubmit="event.preventDefault(); handleModalSubmit();">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small mb-1">Full Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control rounded-1" id="modal-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small mb-1">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control rounded-1" id="modal-email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small mb-1">Mobile / WhatsApp Number <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control rounded-1" id="modal-phone" placeholder="+91 9037-29-1113" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small mb-1">Current Experience</label>
+                            <select class="form-select rounded-1" id="modal-exp">
+                                <option value="1-3 years">1 - 3 years experience</option>
+                                <option value="3-5 years">3 - 5 years experience</option>
+                                <option value="5+ years">5+ years experience</option>
+                                <option value="Student/Fresher">Student / Fresher</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-muted small mb-1">Questions or Goals</label>
+                            <textarea class="form-control rounded-1" id="modal-msg" rows="2" placeholder="Tell us your goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-theme w-100 py-3 fw-bold rounded-1">
+                            SUBMIT ENQUIRY
+                        </button>
+                    </form>
+
+                    <div id="modalSuccess" class="d-none text-center py-4">
+                        <i class="fa-solid fa-circle-check text-success display-4 mb-3"></i>
+                        <h4 class="fw-bold text-dark">Thank You!</h4>
+                        <p class="text-muted small mb-3">We have received your application. An academic counselor will contact you within 24 hours.</p>
+                        <button class="btn btn-outline-primary-theme btn-sm fw-bold px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Page Script -->
+    <script>
+        // 1. Live Countdown Timer
+        function initCountdown() {
+            let totalSeconds = 24 * 3600 * 24 + 18 * 3600 + 42 * 60 + 59;
+            setInterval(() => {
+                if (totalSeconds > 0) {
+                    totalSeconds--;
+                    const days = Math.floor(totalSeconds / (3600 * 24));
+                    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+                    const mins = Math.floor((totalSeconds % 3600) / 60);
+                    const secs = totalSeconds % 60;
+
+                    const dEl = document.getElementById('timer-days');
+                    const hEl = document.getElementById('timer-hours');
+                    const mEl = document.getElementById('timer-mins');
+                    const sEl = document.getElementById('timer-secs');
+
+                    if (dEl) dEl.innerText = days;
+                    if (hEl) hEl.innerText = hours < 10 ? '0' + hours : hours;
+                    if (mEl) mEl.innerText = mins < 10 ? '0' + mins : mins;
+                    if (sEl) sEl.innerText = secs < 10 ? '0' + secs : secs;
+                }
+            }, 1000);
+        }
+        initCountdown();
+
+        // 2. Curriculum Month Tabs Switcher
+        function switchMonth(monthNum) {
+            for (let i = 1; i <= 3; i++) {
+                const tab = document.getElementById(`tab-month-${i}`);
+                const content = document.getElementById(`month-content-${i}`);
+                if (tab && content) {
+                    if (i === monthNum) {
+                        tab.classList.remove('inactive-tab');
+                        tab.classList.add('active-tab');
+                        content.classList.remove('d-none');
+                    } else {
+                        tab.classList.remove('active-tab');
+                        tab.classList.add('inactive-tab');
+                        content.classList.add('d-none');
+                    }
+                }
+            }
+        }
+
+        // 3. Testimonial Carousel Switcher
+        const testimonialsData = [
+            {
+                name: "Emma Rodriguez",
+                badge: "Professional Track",
+                rating: 5,
+                photo: "assets/extracted_img_10.jpg",
+                avatar: "assets/extracted_img_11.jpg",
+                text: '"My experience with Softroniics’ AI Forward Deployed Engineering program has been really valuable. The program focuses not just on learning AI concepts, but on understanding how AI can be applied to solve real-world problems. What I especially liked was the practical approach, hands-on learning, and exposure to real project scenarios."'
+            },
+            {
+                name: "Rahul Verma",
+                badge: "Enterprise AI Engineer",
+                rating: 5,
+                photo: "assets/extracted_img_4.jpg",
+                avatar: "assets/extracted_img_5.jpg",
+                text: '"The hands-on multi-agent and GraphRAG curriculum directly helped our team ship an enterprise document intelligence pipeline in under 3 weeks. The mentorship from senior practicing architects was second to none, giving us real production patterns from day one."'
+            }
+        ];
+        let currentTestimonialIdx = 0;
+
+        function updateTestimonialView() {
+            const item = testimonialsData[currentTestimonialIdx];
+            document.getElementById('testimonial-name').innerText = item.name;
+            document.getElementById('testimonial-badge').innerText = item.badge;
+            document.getElementById('testimonial-text').innerText = item.text;
+            document.getElementById('testimonial-photo').src = item.photo;
+            document.getElementById('testimonial-avatar').src = item.avatar;
+        }
+
+        function nextTestimonial() {
+            currentTestimonialIdx = (currentTestimonialIdx + 1) % testimonialsData.length;
+            updateTestimonialView();
+        }
+
+        function prevTestimonial() {
+            currentTestimonialIdx = (currentTestimonialIdx - 1 + testimonialsData.length) % testimonialsData.length;
+            updateTestimonialView();
+        }
+
+        // 4. Lead Form Handler
+        function handleLeadSubmit() {
+            document.getElementById('leadForm').classList.add('d-none');
+            document.getElementById('leadSuccess').classList.remove('d-none');
+        }
+
+        function resetLeadForm() {
+            document.getElementById('leadForm').reset();
+            document.getElementById('leadForm').classList.remove('d-none');
+            document.getElementById('leadSuccess').classList.add('d-none');
+        }
+
+        // 5. Modal Form Handler
+        function handleModalSubmit() {
+            document.getElementById('modalForm').classList.add('d-none');
+            document.getElementById('modalSuccess').classList.remove('d-none');
+        }
+    </script>
+</body>
+
+</html>
