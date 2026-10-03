@@ -36,11 +36,11 @@ export default function HubShowcaseSection({ onApplyClick }) {
           <div className="hub-map-column">
             <div className="hub-map-wrapper">
               <img 
-                src="/assets/hub_map_with_pins.svg" 
+                src="/assets/hub_map_exact.png" 
                 alt="Softroniics Hubs: Calicut, Perinthalmanna, Palakkad"
                 className="hub-map-image"
                 onError={(e) => {
-                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.src = '/assets/hub_map_with_pins.svg';
                 }}
               />
             </div>

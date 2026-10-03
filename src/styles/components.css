@@ -2380,8 +2380,8 @@ textarea.form-control {
 }
 
 .hub-map-column {
-  flex: 0 0 46%;
-  max-width: 46%;
+  flex: 0 0 50%;
+  max-width: 50%;
   position: relative;
   z-index: 2;
 }
@@ -2389,20 +2389,20 @@ textarea.form-control {
 .hub-map-wrapper {
   width: 100%;
   position: relative;
-  margin-right: -40px;
+  margin-right: -60px;
 }
 
 .hub-map-image {
   width: 100%;
   height: auto;
-  max-height: 480px;
+  max-height: 520px;
+  object-fit: contain;
   display: block;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.4));
 }
 
 .hub-card-column {
-  flex: 0 0 54%;
-  max-width: 54%;
+  flex: 0 0 52%;
+  max-width: 52%;
   position: relative;
   z-index: 5;
 }
