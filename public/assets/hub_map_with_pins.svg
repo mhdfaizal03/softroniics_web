@@ -1,74 +1,80 @@
-<svg width="1000" height="520" viewBox="0 0 1000 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#E88F1B" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#121316" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="pinShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    <!-- Map drop shadow -->
+    <filter id="shadowGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
+
+    <!-- Pin Shadow -->
+    <filter id="pinShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+
+    <!-- Pin Shape Definition (White Teardrop Marker) -->
+    <g id="mapPinMarker">
+      <path d="M0,0 C-11,-12 -15,-20 -15,-28 C-15,-36.5 -8.5,-43 0,-43 C8.5,-43 15,-36.5 15,-28 C15,-20 11,-12 0,0 Z" fill="#FFFFFF"/>
+      <circle cx="0" cy="-28" r="6" fill="#1C1E22"/>
+    </g>
   </defs>
 
-  <!-- Background grid & glow -->
-  <rect width="1000" height="520" fill="transparent"/>
-  <circle cx="520" cy="270" r="240" fill="url(#mapGlow)"/>
+  <!-- World Continents (Dark Muted Grey #2A2C31 matching screenshot) -->
+  <g fill="#24262B" filter="url(#shadowGlow)">
+    <!-- North America -->
+    <path d="M-40,80 Q20,60 70,70 T150,110 T180,180 T160,260 T110,310 T40,260 T0,200 Z" />
+    <path d="M120,30 Q160,20 200,35 T220,70 T170,80 T120,50 Z" /> <!-- Greenland -->
 
-  <!-- World / Regional outline map stylized in dark tech aesthetic -->
-  <g opacity="0.32" stroke="#4A5568" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-    <!-- India & Indian Ocean Outline contour simplified stylized -->
-    <path d="M420,120 Q480,110 520,140 T560,180 T600,240 T570,320 T520,400 T480,450 T460,400 T440,320 T400,240 T380,180 Z" fill="#1A202C" stroke="#718096" stroke-dasharray="3 3"/>
+    <!-- South America -->
+    <path d="M80,310 Q140,320 160,370 T130,460 T90,540 T60,530 T60,420 T70,330 Z" />
+
+    <!-- Europe -->
+    <path d="M220,90 Q270,70 320,80 T370,120 T340,170 T280,180 T240,160 T220,110 Z" />
+    <path d="M240,50 Q260,30 280,45 T270,80 T240,70 Z" /> <!-- Scandinavia -->
+    <path d="M210,100 Q230,90 235,110 T220,130 T205,115 Z" /> <!-- UK -->
+
+    <!-- Africa -->
+    <path d="M230,190 Q310,180 340,240 T320,350 T280,440 T240,410 T210,300 T215,220 Z" />
+
+    <!-- Asia & Russia -->
+    <path d="M340,70 Q460,50 600,60 T750,90 T720,180 T640,220 T540,200 T440,180 T350,130 Z" />
+    <path d="M520,200 Q580,210 600,260 T560,340 T500,320 T460,250 T500,210 Z" /> <!-- East Asia & China -->
     
-    <!-- State boundary / Kerala coast highlight -->
-    <path d="M455,340 C452,365 448,390 450,415 C453,435 458,450 460,460" stroke="#E88F1B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- India Subcontinent (Accurately proportioned on left of Kochi card) -->
+    <path d="M280,240 C320,230 360,230 390,260 C410,290 400,350 365,420 C340,460 310,480 300,490 C290,470 270,410 260,350 C250,290 260,250 280,240 Z" fill="#282A30"/>
+    
+    <!-- Southeast Asia -->
+    <path d="M420,320 Q460,310 470,350 T440,400 T410,360 Z" />
+    <!-- Australia -->
+    <path d="M520,380 Q590,370 620,410 T590,490 T510,480 T490,420 Z" />
   </g>
 
-  <!-- Network nodes connection lines -->
-  <g stroke="#E88F1B" stroke-width="1.2" opacity="0.4" stroke-dasharray="4 4">
-    <line x1="450" y1="365" x2="455" y2="390" />
-    <line x1="455" y1="390" x2="468" y2="400" />
-    <line x1="455" y1="390" x2="456" y2="435" />
+  <!-- ==========================================
+       LOCATION PINS & TEXT LABELS (Exact from user screenshot)
+       ========================================== -->
+
+  <!-- Pin 1: Calicut (Leftmost Marker) -->
+  <g transform="translate(85, 345)" filter="url(#pinShadow)">
+    <use href="#mapPinMarker"/>
+    <!-- Label -->
+    <text x="0" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="-0.2px">
+      Calicut
+    </text>
   </g>
 
-  <!-- Pin 1: Calicut -->
-  <g transform="translate(450, 365)" filter="url(#pinShadow)">
-    <circle cx="0" cy="0" r="14" fill="#E88F1B" opacity="0.25">
-      <animate attributeName="r" values="8;18;8" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0.05;0.4" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="6" fill="#E88F1B"/>
-    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
-    <rect x="12" y="-12" width="62" height="22" rx="4" fill="#1E2024" stroke="#E88F1B" stroke-width="1"/>
-    <text x="18" y="3" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="11" font-weight="600">Calicut</text>
+  <!-- Pin 2: Perinthalmanna (Top-Middle Marker) -->
+  <g transform="translate(315, 270)" filter="url(#pinShadow)">
+    <use href="#mapPinMarker"/>
+    <!-- Label -->
+    <text x="0" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="-0.2px">
+      Perinthalmanna
+    </text>
   </g>
 
-  <!-- Pin 2: Perinthalmanna -->
-  <g transform="translate(455, 390)" filter="url(#pinShadow)">
-    <circle cx="0" cy="0" r="12" fill="#E88F1B" opacity="0.25">
-      <animate attributeName="r" values="6;16;6" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="5" fill="#E88F1B"/>
-    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
-    <rect x="-124" y="-10" width="114" height="22" rx="4" fill="#1E2024" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-    <text x="-118" y="5" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="11" font-weight="600">Perinthalmanna</text>
-  </g>
-
-  <!-- Pin 3: Palakkad -->
-  <g transform="translate(468, 400)" filter="url(#pinShadow)">
-    <circle cx="0" cy="0" r="5" fill="#E88F1B"/>
-    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
-    <rect x="12" y="-11" width="72" height="22" rx="4" fill="#1E2024" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-    <text x="18" y="4" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="11" font-weight="600">Palakkad</text>
-  </g>
-
-  <!-- Pin 4: Kochi (Hub Flagship) -->
-  <g transform="translate(456, 435)" filter="url(#pinShadow)">
-    <circle cx="0" cy="0" r="20" fill="#E88F1B" opacity="0.3">
-      <animate attributeName="r" values="10;24;10" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="0" cy="0" r="8" fill="#E88F1B"/>
-    <circle cx="0" cy="0" r="3.5" fill="#FFFFFF"/>
-    <rect x="16" y="-14" width="88" height="26" rx="6" fill="#E88F1B"/>
-    <text x="24" y="3" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="700">★ Kochi Hub</text>
+  <!-- Pin 3: Palakkad (Bottom-Middle Marker) -->
+  <g transform="translate(295, 420)" filter="url(#pinShadow)">
+    <use href="#mapPinMarker"/>
+    <!-- Label -->
+    <text x="0" y="24" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="-0.2px">
+      Palakkad
+    </text>
   </g>
 </svg>

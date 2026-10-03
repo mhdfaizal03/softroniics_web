@@ -2515,12 +2515,17 @@ textarea.form-control {
 }
 
 .hub-photo-tall {
-  height: 265px;
+  height: 270px;
 }
 
 .hub-photo-short {
-  height: 155px;
+  height: 160px;
   align-self: flex-end;
+}
+
+.hub-photo-cutout {
+  height: 270px;
+  margin-right: -24px;
 }
 
 /* Rotating Contact Badge Stamp */

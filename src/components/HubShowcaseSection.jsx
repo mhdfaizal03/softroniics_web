@@ -49,33 +49,31 @@ export default function HubShowcaseSection({ onApplyClick }) {
           {/* Right Column: Ivory Kochi Hub Card */}
           <div className="hub-card-column">
             <div className="hub-details-card">
-              {/* Spinning Contact Stamp */}
+              {/* Spinning Contact Stamp matching exact design */}
               <a 
                 href="tel:+919995125959" 
                 className="hub-contact-stamp-link" 
                 title="Contact Us via Phone"
               >
                 <svg viewBox="0 0 120 120" className="hub-stamp-svg">
-                  <circle cx="60" cy="60" r="54" fill="#E88F1B" />
+                  <circle cx="60" cy="60" r="58" fill="#E88F1B" />
                   <g className="hub-stamp-spin-text">
                     <path 
                       id="hubBadgePath" 
-                      d="M 60, 60 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" 
+                      d="M 60, 60 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" 
                       fill="none" 
                     />
-                    <text fill="white" fontSize="8.8" fontWeight="700" letterSpacing="2.6px">
+                    <text fill="white" fontSize="9.5" fontWeight="700" letterSpacing="3px">
                       <textPath href="#hubBadgePath" startOffset="50%" textAnchor="middle">
                         CONTACT US • CONTACT US •
                       </textPath>
                     </text>
                   </g>
-                  <path 
-                    d="M52 68 L68 52 M68 52 H56 M68 52 V64" 
-                    stroke="white" 
-                    strokeWidth="2.6" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                  />
+                  {/* Clean slanted arrow inside */}
+                  <g transform="translate(60,60)">
+                    <line x1="-10" y1="10" x2="10" y2="-10" stroke="white" strokeWidth="2.8" strokeLinecap="round" />
+                    <polyline points="0,-10 10,-10 10,0" fill="none" stroke="white" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </g>
                 </svg>
               </a>
 
@@ -132,7 +130,7 @@ export default function HubShowcaseSection({ onApplyClick }) {
                       }}
                     />
                   </div>
-                  <div className="hub-photo-frame hub-photo-tall">
+                  <div className="hub-photo-frame hub-photo-tall hub-photo-cutout">
                     <img 
                       src="/assets/hub_laptop.jpg" 
                       alt="Workstation Setup"
