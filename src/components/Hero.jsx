@@ -34,7 +34,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
     <section className="hero-section" id="hero">
       {/* 3D Perspective Tunnel Background Grid from abc.svg */}
       <div className="hero-perspective-bg" aria-hidden="true">
-        <img src="/assets/hero-bg-grid.svg" alt="" className="hero-bg-grid-img" />
+        <img src="./assets/hero-bg-grid.svg" alt="" className="hero-bg-grid-img" />
       </div>
 
       <div className="container-wide hero-container-rel">

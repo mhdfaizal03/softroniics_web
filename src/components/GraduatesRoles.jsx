@@ -4,23 +4,23 @@ export default function GraduatesRoles() {
   const roles = [
     {
       title: "AI Architect",
-      img: "/assets/role-1.jpg"
+      img: "./assets/role-1.jpg"
     },
     {
       title: "AI Consultant",
-      img: "/assets/role-2.jpg"
+      img: "./assets/role-2.jpg"
     },
     {
       title: "AI Platform Engineer",
-      img: "/assets/role-3.jpg"
+      img: "./assets/role-3.jpg"
     },
     {
       title: "Enterprise AI Engineer",
-      img: "/assets/role-4.jpg"
+      img: "./assets/role-4.jpg"
     },
     {
       title: "Staff / Lead Applied AI Engineer",
-      img: "/assets/role-5.jpg"
+      img: "./assets/role-5.jpg"
     }
   ];
 

@@ -19,9 +19,9 @@ export default function UrgencyBanner({ onApplyClick }) {
           </div>
         </div>
 
-        <button 
-          type="button" 
-          onClick={onApplyClick} 
+        <button
+          type="button"
+          onClick={onApplyClick}
           className="btn-urgent-apply"
         >
           Apply for the experienced track <ArrowUpRight size={16} />

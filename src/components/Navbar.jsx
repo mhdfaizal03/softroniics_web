@@ -95,7 +95,7 @@ export default function Navbar({ onEnquireClick }) {
     <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${!isVisible ? 'navbar-hidden' : 'navbar-visible'}`}>
       <div className="container-wide navbar-inner">
         <a href="#" className="logo-link" aria-label="Softroniics Home">
-          <img src="/assets/logo.png" alt="Softroniics Logo" className="brand-logo" />
+          <img src="./assets/logo.png" alt="Softroniics Logo" className="brand-logo" />
         </a>
 
         {/* Desktop Nav */}

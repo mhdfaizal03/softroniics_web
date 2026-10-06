@@ -9,8 +9,8 @@ export default function TestimonialsSection() {
       name: "Emma Rodriguez",
       badge: "Professional",
       rating: 5,
-      avatar: "/assets/testimonial-avatar.jpg",
-      photo: "/assets/testimonial-student.jpg",
+      avatar: "./assets/testimonial-avatar.jpg",
+      photo: "./assets/testimonial-student.jpg",
       paragraphs: [
         "My experience with Softroniics’ AI Forward Deployed Engineering program has been really valuable. The program focuses not just on learning AI concepts, but on understanding how AI can be applied to solve real-world problems.",
         "What I especially liked was the practical approach, hands-on learning, and exposure to real project scenarios. ."
@@ -20,8 +20,8 @@ export default function TestimonialsSection() {
       name: "Rahul Verma",
       badge: "Professional",
       rating: 5,
-      avatar: "/assets/testimonial-avatar.jpg",
-      photo: "/assets/testimonial-student.jpg",
+      avatar: "./assets/testimonial-avatar.jpg",
+      photo: "./assets/testimonial-student.jpg",
       paragraphs: [
         "The hands-on multi-agent and GraphRAG curriculum directly helped our team ship an enterprise document intelligence pipeline in under 3 weeks.",
         "The mentorship from senior practicing architects was second to none, giving us real production patterns from day one."

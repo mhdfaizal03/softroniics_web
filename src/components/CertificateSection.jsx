@@ -9,7 +9,7 @@ export default function CertificateSection({ onApplyClick }) {
           {/* Left Column: Certificate with thick orange border */}
           <div className="certificate-card-frame">
             <img 
-              src="/assets/certificate-akshay.png" 
+              src="./assets/certificate-akshay.png" 
               alt="Conformance Certificate Softroniics Technologies NSDC" 
               className="certificate-image"
             />

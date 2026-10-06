@@ -2,7 +2,7 @@
 
 /* Landing Page Root — prevents horizontal overflow */
 .landing-page-root {
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -665,6 +665,7 @@
 .apply-form-sticky {
   position: sticky;
   top: 100px;
+  align-self: start;
   background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -1558,6 +1559,9 @@ textarea.form-control {
   justify-content: center;
   z-index: 2;
   pointer-events: none;
+  overflow: hidden;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .mentor-portrait-img {
@@ -1715,7 +1719,7 @@ textarea.form-control {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .testimonial-quote-mark {
@@ -1759,7 +1763,7 @@ textarea.form-control {
   gap: 14px;
   position: relative;
   z-index: 2;
-  margin-top: auto;
+  margin-top: 32px;
 }
 
 .author-avatar {
@@ -2606,7 +2610,7 @@ textarea.form-control {
 .main-footer-section {
   position: relative;
   background-color: #121214;
-  background-image: url('/assets/footer_building_bg.jpg'), url('/assets/footer-buildings.jpg');
+  background-image: url('/assets/footer-buildings.jpg');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;

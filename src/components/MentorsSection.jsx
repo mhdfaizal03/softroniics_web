@@ -6,19 +6,19 @@ export default function MentorsSection() {
       name: "Neeraj Nirala",
       role: "Technical Architect",
       experience: "15 Years of Experience",
-      image: "/assets/mentor-neeraj.png"
+      image: "./assets/mentor-neeraj.png"
     },
     {
       name: "Arjun M.S",
       role: "AI solution Architect",
       experience: "13 Years of Experience",
-      image: "/assets/mentor-arjun.png"
+      image: "./assets/mentor-arjun.png"
     },
     {
       name: "Midhun G S",
       role: "Technical Architect",
       experience: "13 Years of Experience",
-      image: "/assets/mentor-midhun.png"
+      image: "./assets/mentor-midhun.png"
     }
   ];
 

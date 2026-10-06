@@ -3,28 +3,28 @@ import React from 'react';
 export default function HiringPartners() {
   const partnerRows = [
     [
-      { name: "Don Bosco Group", logo: "/assets/exact-partner-1.png" },
-      { name: "LearnAbout Edutech", logo: "/assets/exact-partner-2.png" },
-      { name: "sysol SYSTEM SOLUTIONS", logo: "/assets/exact-partner-3.png" },
-      { name: "Edutech E-Learning", logo: "/assets/exact-partner-4.png" }
+      { name: "Don Bosco Group", logo: "./assets/exact-partner-1.png" },
+      { name: "LearnAbout Edutech", logo: "./assets/exact-partner-2.png" },
+      { name: "sysol SYSTEM SOLUTIONS", logo: "./assets/exact-partner-3.png" },
+      { name: "Edutech E-Learning", logo: "./assets/exact-partner-4.png" }
     ],
     [
-      { name: "GJ GLOBAL IT VENTURES", logo: "/assets/exact-partner-5.png" },
-      { name: "NME", logo: "/assets/exact-partner-6.png" },
-      { name: "exaware Software Innovation", logo: "/assets/exact-partner-7.png" },
-      { name: "edutech", logo: "/assets/exact-partner-8.png" }
+      { name: "GJ GLOBAL IT VENTURES", logo: "./assets/exact-partner-5.png" },
+      { name: "NME", logo: "./assets/exact-partner-6.png" },
+      { name: "exaware Software Innovation", logo: "./assets/exact-partner-7.png" },
+      { name: "edutech", logo: "./assets/exact-partner-8.png" }
     ],
     [
-      { name: "Don Bosco Group", logo: "/assets/exact-partner-1.png" },
-      { name: "LearnAbout Edutech", logo: "/assets/exact-partner-2.png" },
-      { name: "sysol SYSTEM SOLUTIONS", logo: "/assets/exact-partner-3.png" },
-      { name: "Edutech E-Learning", logo: "/assets/exact-partner-4.png" }
+      { name: "Don Bosco Group", logo: "./assets/exact-partner-1.png" },
+      { name: "LearnAbout Edutech", logo: "./assets/exact-partner-2.png" },
+      { name: "sysol SYSTEM SOLUTIONS", logo: "./assets/exact-partner-3.png" },
+      { name: "Edutech E-Learning", logo: "./assets/exact-partner-4.png" }
     ],
     [
-      { name: "GJ GLOBAL IT VENTURES", logo: "/assets/exact-partner-5.png" },
-      { name: "NME", logo: "/assets/exact-partner-6.png" },
-      { name: "exaware Software Innovation", logo: "/assets/exact-partner-7.png" },
-      { name: "edutech", logo: "/assets/exact-partner-8.png" }
+      { name: "GJ GLOBAL IT VENTURES", logo: "./assets/exact-partner-5.png" },
+      { name: "NME", logo: "./assets/exact-partner-6.png" },
+      { name: "exaware Software Innovation", logo: "./assets/exact-partner-7.png" },
+      { name: "edutech", logo: "./assets/exact-partner-8.png" }
     ]
   ];
 

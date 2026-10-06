@@ -43,7 +43,6 @@ export default function CapstoneSection({ onExploreClick }) {
               type="button"
               onClick={onExploreClick}
               className="btn-primary"
-              style={{ marginBottom: '32px' }}
             >
               Explore Now <ArrowUpRight size={17} />
             </button>
@@ -66,7 +65,7 @@ export default function CapstoneSection({ onExploreClick }) {
           {/* Right Column: Photo & Floating Metric Card */}
           <div className="capstone-media-wrap">
             <img
-              src="/assets/students-group.jpg"
+              src="./assets/students-group.jpg"
               alt="Engineering students collaborating on AI Capstone"
               className="capstone-main-img"
             />

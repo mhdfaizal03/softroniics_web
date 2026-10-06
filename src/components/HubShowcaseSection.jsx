@@ -36,11 +36,11 @@ export default function HubShowcaseSection({ onApplyClick }) {
           <div className="hub-map-column">
             <div className="hub-map-wrapper">
               <img 
-                src="/assets/hub_map_exact.png" 
+                src="./assets/hub_map_exact.png" 
                 alt="Softroniics Hubs: Calicut, Perinthalmanna, Palakkad"
                 className="hub-map-image"
                 onError={(e) => {
-                  e.currentTarget.src = '/assets/hub_map_with_pins.svg';
+                  e.currentTarget.src = './assets/hub_map_with_pins.svg';
                 }}
               />
             </div>
@@ -114,7 +114,7 @@ export default function HubShowcaseSection({ onApplyClick }) {
                 <div className="hub-gallery-block">
                   <div className="hub-photo-frame hub-photo-tall">
                     <img 
-                      src="/assets/hub_corridor.jpg" 
+                      src="./assets/hub_corridor.jpg" 
                       alt="Softroniics Modern Campus Corridor"
                       onError={(e) => {
                         e.currentTarget.src = "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80";
@@ -123,7 +123,7 @@ export default function HubShowcaseSection({ onApplyClick }) {
                   </div>
                   <div className="hub-photo-frame hub-photo-short">
                     <img 
-                      src="/assets/hub_meeting.jpg" 
+                      src="./assets/hub_meeting.jpg" 
                       alt="Meeting Room Discussion"
                       onError={(e) => {
                         e.currentTarget.src = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80";
@@ -132,7 +132,7 @@ export default function HubShowcaseSection({ onApplyClick }) {
                   </div>
                   <div className="hub-photo-frame hub-photo-tall hub-photo-cutout">
                     <img 
-                      src="/assets/hub_laptop.jpg" 
+                      src="./assets/hub_laptop.jpg" 
                       alt="Workstation Setup"
                       onError={(e) => {
                         e.currentTarget.src = "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80";

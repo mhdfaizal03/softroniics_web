@@ -23,22 +23,22 @@ export default function HeroVisual() {
 <rect width="88.3529" height="85.8286" fill="white" transform="translate(1019.25 794.853) rotate(-90)"/>
 </clipPath>
           <pattern id="pattern_boardroom" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-tile-1.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-tile-1.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
           <pattern id="pattern_code" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-code.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-code.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
           <pattern id="pattern_presentation" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-presentation.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-presentation.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
           <pattern id="pattern_constellation" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-tile-2.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-tile-2.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
           <pattern id="pattern_student" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-tile-3.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-tile-3.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
           <pattern id="pattern_server" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <image href="/assets/hero-tile-4.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+            <image href="./assets/hero-tile-4.png" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
           </pattern>
         </defs>
         <path d="M988.689 410.5C972.43 410.5 959.25 423.68 959.25 439.939V590.814C959.25 607.073 972.43 620.253 988.689 620.253H1122.25C1160.35 624.411 1190.6 654.667 1194.76 692.766V826.079C1194.76 842.338 1207.94 855.518 1224.2 855.518H1375.08C1391.33 855.518 1404.51 842.338 1404.51 826.079V675.204C1404.51 658.945 1391.33 645.765 1375.08 645.765H1241.14C1203.82 641.641 1174.04 612.466 1169 575.425V439.939C1169 423.68 1155.82 410.5 1139.56 410.5H988.689Z" fill="url(#paint2_linear_502_9124)"/>
