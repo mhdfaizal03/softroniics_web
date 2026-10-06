@@ -7,7 +7,7 @@ export default function UrgencyBanner({ onApplyClick }) {
       <div className="container-wide urgency-banner-inner">
         <div className="urgency-banner-left">
           <div className="urgency-fire-icon">
-            <Flame size={20} />
+            <Flame size={20} color="#EA580C" fill="#EA580C" />
           </div>
           <div>
             <div className="urgency-banner-title">

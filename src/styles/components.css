@@ -416,7 +416,17 @@
 .urgency-banner {
   background: #FFF7E6;
   border-top: 1px solid #FFEDD5;
-  padding: 24px 0;
+  padding: 16px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+}
+
+body {
+  padding-bottom: 80px; /* Space for the sticky bottom banner */
 }
 
 .urgency-banner-inner {

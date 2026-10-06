@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Flame, Clock, Hourglass } from 'lucide-react';
+import { ArrowUpRight, Flame, CalendarDays, CalendarClock } from 'lucide-react';
 import HeroVisual from './HeroVisual';
 
 export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
@@ -49,7 +49,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
             <div className="hero-pills-row">
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <Clock size={20} color="#ffffff" strokeWidth={2.5} />
+                  <CalendarDays size={20} color="#E88F1B" fill="#ffffff" strokeWidth={2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Duration</span>
@@ -59,7 +59,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
 
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <Hourglass size={18} color="#ffffff" strokeWidth={2.5} />
+                  <CalendarClock size={20} color="#E88F1B" fill="#ffffff" strokeWidth={2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Schedule</span>
@@ -108,7 +108,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
 
             <div className="hero-urgency-badge">
               <div className="urgency-flame-circle">
-                <Flame size={15} color="#E11D48" />
+                <Flame size={15} color="#E11D48" fill="#E11D48" />
               </div>
               <span>Next cohort — only 9 of 40 seats left</span>
             </div>
