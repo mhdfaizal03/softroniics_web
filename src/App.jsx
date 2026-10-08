@@ -24,9 +24,9 @@ import EnquiryModal from './components/EnquiryModal';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalTopic, setModalTopic] = useState('AI Engineering Program');
+  const [modalTopic, setModalTopic] = useState('AI Forward Deployed Engineering');
 
-  const handleOpenModal = (topic = 'AI Engineering Program') => {
+  const handleOpenModal = (topic = 'AI Forward Deployed Engineering') => {
     setModalTopic(topic);
     setModalOpen(true);
   };

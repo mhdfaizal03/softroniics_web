@@ -69,7 +69,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
             </div>
 
             <h1 className="hero-title">
-              AI Engineering Program
+              AI Forward Deployed Engineering
             </h1>
             <div className="hero-title-sub">
               Build real-world AI systems.

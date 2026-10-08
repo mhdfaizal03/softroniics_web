@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, CheckCircle2, ArrowUpRight } from 'lucide-react';
 
-export default function EnquiryModal({ isOpen, onClose, defaultTopic = "AI Engineering Program" }) {
+export default function EnquiryModal({ isOpen, onClose, defaultTopic = "AI Forward Deployed Engineering" }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

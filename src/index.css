@@ -94,16 +94,16 @@ img {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding-left: clamp(20px, 4vw, 48px);
-  padding-right: clamp(20px, 4vw, 48px);
+  padding-left: clamp(32px, 6vw, 96px);
+  padding-right: clamp(32px, 6vw, 96px);
 }
 
 .container-wide {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: clamp(20px, 4vw, 48px);
-  padding-right: clamp(20px, 4vw, 48px);
+  padding-left: clamp(32px, 6vw, 96px);
+  padding-right: clamp(32px, 6vw, 96px);
 }
 
 /* Top Ticker */
@@ -332,13 +332,17 @@ img {
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  transition: all 0.22s ease;
+  transition: all 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .btn-enquire:hover {
   background: var(--primary-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(232, 143, 27, 0.45);
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 6px 16px rgba(232, 143, 27, 0.45);
+}
+
+.btn-enquire:active {
+  transform: translateY(0) scale(0.98);
 }
 
 /* Mobile Menu Button */
@@ -427,13 +431,17 @@ img {
   align-items: center;
   gap: 8px;
   box-shadow: var(--shadow-orange);
-  transition: all 0.25s ease;
+  transition: all 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .btn-primary:hover {
   background: var(--primary-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px -4px rgba(232, 143, 27, 0.4);
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 8px 16px -4px rgba(232, 143, 27, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
@@ -447,13 +455,17 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.25s ease;
+  transition: all 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .btn-secondary:hover {
   background: #FFF7ED;
-  transform: translateY(-2px);
+  transform: translateY(-1px) scale(1.01);
   box-shadow: 0 4px 12px rgba(232, 143, 27, 0.15);
+}
+
+.btn-secondary:active {
+  transform: translateY(0) scale(0.98);
 }
 
 /* Modal Overlay */
