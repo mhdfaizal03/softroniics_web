@@ -39,55 +39,41 @@
 .hero-tag-badge {
   display: inline-flex;
   align-items: center;
-  background: #FEF4E7;
+  background: #FFF4CE;
   color: #B45309;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 8px 18px;
-  border-radius: var(--radius-full);
-  margin-bottom: 24px;
-  letter-spacing: 0.02em;
-  border: 1px solid rgba(232, 143, 27, 0.25);
-  box-shadow: 0 2px 8px rgba(232, 143, 27, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius-xs);
+  margin-bottom: 22px;
+  letter-spacing: 0.01em;
 }
 
 .hero-pills-row {
   display: flex;
   align-items: center;
-  gap: 32px;
-  margin-bottom: 34px;
+  gap: 36px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
 .hero-pill-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 6px 14px 6px 6px;
-  background: #FFFFFF;
-  border: 1px solid #F3F4F6;
-  border-radius: var(--radius-md);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  transition: all 0.2s ease;
-}
-
-.hero-pill-item:hover {
-  border-color: #FED7AA;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(232, 143, 27, 0.1);
+  gap: 12px;
 }
 
 .hero-pill-circle {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #E88F1B 0%, #D97706 100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #E88F1B;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #FFFFFF;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(232, 143, 27, 0.32);
+  box-shadow: 0 3px 10px rgba(232, 143, 27, 0.28);
 }
 
 .hero-pill-text {
@@ -96,11 +82,9 @@
 }
 
 .hero-pill-label {
-  font-size: 11.5px;
-  color: #D97706;
+  font-size: 11px;
+  color: #E88F1B;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   margin-bottom: 2px;
 }
 
@@ -183,18 +167,16 @@
   color: #BE123C;
   font-size: 13.5px;
   font-weight: 700;
-  padding: 8px 18px 8px 10px;
-  border-radius: var(--radius-full);
+  padding: 6px 16px 6px 8px;
+  border-radius: var(--radius-xs);
   margin-bottom: 24px;
-  border: 1px solid rgba(225, 29, 72, 0.2);
-  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.06);
 }
 
 .urgency-flame-circle {
-  background: rgba(225, 29, 72, 0.15);
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
+  background: rgba(225, 29, 72, 0.12);
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,42 +191,39 @@
   font-size: 13px;
   font-weight: 600;
   color: #4B5563;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .countdown-boxes {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .countdown-box {
-  background: #FFFFFF;
-  border: 1px solid #FED7AA;
-  border-radius: var(--radius-sm);
-  padding: 10px 18px;
-  min-width: 68px;
+  background: #FFF7ED;
+  border-radius: var(--radius-xs);
+  padding: 8px 14px;
+  min-width: 62px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(232, 143, 27, 0.08);
   transition: all 0.2s ease;
 }
 
 .countdown-box:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(232, 143, 27, 0.15);
+  transform: translateY(-1px);
 }
 
 .countdown-num {
   display: block;
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 800;
   color: var(--primary);
   line-height: 1.2;
 }
 
 .countdown-unit {
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 10.5px;
+  font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
   margin-top: 2px;

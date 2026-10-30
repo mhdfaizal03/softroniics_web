@@ -294,32 +294,48 @@ img {
 }
 
 /* Floating Dropdown Menu */
+.nav-item-dropdown-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 12px);
-  left: 50%;
-  transform: translateX(-50%);
+  top: 100%;
+  left: 0;
   background: #FFFFFF;
-  min-width: 230px;
-  padding: 10px 8px;
+  min-width: 240px;
+  padding: 8px;
   border-radius: 12px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(232, 143, 27, 0.15);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(232, 143, 27, 0.18);
   display: flex;
   flex-direction: column;
   gap: 2px;
   z-index: 1000;
-  animation: dropdownFadeIn 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: dropdownFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 4px;
+}
+
+/* Invisible bridge so mouse moving from link to dropdown never loses hover */
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
 }
 
 @keyframes dropdownFadeIn {
   from {
     opacity: 0;
-    transform: translate(-50%, 8px);
+    transform: translateY(6px);
   }
   to {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
 
@@ -393,9 +409,32 @@ img {
   justify-content: space-between;
   padding: 6px 0;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mobile-nav-link:hover {
+  color: var(--primary);
+}
+
+.mobile-submenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0 8px 16px;
+  border-left: 2px solid #FED7AA;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.mobile-submenu-item {
+  font-size: 14px;
+  color: #4B5563;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.mobile-submenu-item:hover {
   color: var(--primary);
 }
 

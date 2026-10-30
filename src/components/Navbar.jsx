@@ -6,6 +6,18 @@ export default function Navbar({ onEnquireClick }) {
   const [isVisible, setIsVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileExpanded, setMobileExpanded] = useState({});
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleDocumentClick = (e) => {
+      if (!e.target.closest('.nav-item-dropdown-wrap')) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener('click', handleDocumentClick);
+    return () => document.removeEventListener('click', handleDocumentClick);
+  }, []);
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
@@ -14,14 +26,12 @@ export default function Navbar({ onEnquireClick }) {
     const updateNavbar = () => {
       const currentScrollY = window.pageYOffset;
 
-      // Add elevated shadow styling once user scrolls past 20px
       if (currentScrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
 
-      // If mobile drawer is open, keep navbar pinned visible
       if (mobileMenuOpen) {
         setIsVisible(true);
         lastScrollY = currentScrollY;
@@ -29,12 +39,9 @@ export default function Navbar({ onEnquireClick }) {
         return;
       }
 
-      // Hide when scrolling DOWN, Reveal when scrolling UP
       if (currentScrollY > lastScrollY && currentScrollY > 120) {
-        // Scrolling down past hero top -> hide smoothly
         setIsVisible(false);
       } else if (currentScrollY < lastScrollY || currentScrollY <= 120) {
-        // Scrolling up or near top of the page -> reveal immediately
         setIsVisible(true);
       }
 
@@ -91,6 +98,12 @@ export default function Navbar({ onEnquireClick }) {
     { label: 'Contact Us', href: '#hub', hasDropdown: false }
   ];
 
+  const toggleMobileSub = (idx, e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setMobileExpanded(prev => ({ ...prev, [idx]: !prev[idx] }));
+  };
+
   return (
     <header className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${!isVisible ? 'navbar-hidden' : 'navbar-visible'}`}>
       <div className="container-wide navbar-inner">
@@ -108,16 +121,35 @@ export default function Navbar({ onEnquireClick }) {
                 onMouseEnter={() => item.hasDropdown && setActiveDropdown(idx)}
                 onMouseLeave={() => item.hasDropdown && setActiveDropdown(null)}
               >
-                <a href={item.href} className="nav-link">
+                <a 
+                  href={item.href} 
+                  className="nav-link"
+                  onClick={(e) => {
+                    if (item.hasDropdown) {
+                      e.preventDefault();
+                      setActiveDropdown(activeDropdown === idx ? null : idx);
+                    }
+                  }}
+                >
                   <span>{item.label}</span>
-                  {item.hasDropdown && <ChevronDown size={14} className={`nav-caret ${activeDropdown === idx ? 'caret-rotated' : ''}`} />}
+                  {item.hasDropdown && (
+                    <ChevronDown 
+                      size={14} 
+                      className={`nav-caret ${activeDropdown === idx ? 'caret-rotated' : ''}`} 
+                    />
+                  )}
                 </a>
 
                 {/* Dropdown Menu */}
                 {item.hasDropdown && activeDropdown === idx && (
                   <div className="nav-dropdown-menu">
                     {item.subItems.map((sub, sIdx) => (
-                      <a key={sIdx} href={sub.href} className="nav-dropdown-item" onClick={() => setActiveDropdown(null)}>
+                      <a 
+                        key={sIdx} 
+                        href={sub.href} 
+                        className="nav-dropdown-item" 
+                        onClick={() => setActiveDropdown(null)}
+                      >
                         {sub.label}
                       </a>
                     ))}
@@ -153,14 +185,42 @@ export default function Navbar({ onEnquireClick }) {
         <div className="navbar-mobile-drawer">
           {navLinks.map((item, idx) => (
             <div key={idx} className="mobile-nav-group">
-              <a 
-                href={item.href} 
-                onClick={() => setMobileMenuOpen(false)}
-                className="mobile-nav-link"
-              >
-                <span>{item.label}</span>
-                {item.hasDropdown && <ChevronDown size={16} />}
-              </a>
+              {item.hasDropdown ? (
+                <>
+                  <div 
+                    className="mobile-nav-link mobile-nav-dropdown-trigger"
+                    onClick={(e) => toggleMobileSub(idx, e)}
+                  >
+                    <span>{item.label}</span>
+                    <ChevronDown 
+                      size={16} 
+                      className={`nav-caret ${mobileExpanded[idx] ? 'caret-rotated' : ''}`} 
+                    />
+                  </div>
+                  {mobileExpanded[idx] && (
+                    <div className="mobile-submenu-list">
+                      {item.subItems.map((sub, sIdx) => (
+                        <a 
+                          key={sIdx} 
+                          href={sub.href} 
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="mobile-submenu-item"
+                        >
+                          {sub.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <a 
+                  href={item.href} 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="mobile-nav-link"
+                >
+                  <span>{item.label}</span>
+                </a>
+              )}
             </div>
           ))}
           <button 

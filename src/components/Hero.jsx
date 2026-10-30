@@ -42,15 +42,14 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
           {/* Left Column: Hero Content */}
           <div className="hero-content">
             <div className="hero-tag-badge">
-              <Sparkles size={14} strokeWidth={2.4} style={{ marginRight: '6px' }} />
-              AI Forward Deployed Engineering
+              AI Forward deployed engineering
             </div>
 
             {/* Spec Badges Row */}
             <div className="hero-pills-row">
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <Calendar size={20} strokeWidth={2.2} />
+                  <Calendar size={18} strokeWidth={2.2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Duration</span>
@@ -60,7 +59,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
 
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <Clock4 size={20} strokeWidth={2.2} />
+                  <Clock4 size={18} strokeWidth={2.2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Schedule</span>
