@@ -1,25 +1,25 @@
 import React from 'react';
-import { Smile, Users, Globe, Handshake } from 'lucide-react';
+import { Clock, Code2, CalendarCheck, CheckCircle2 } from 'lucide-react';
 
 export default function StatsBar() {
   const stats = [
     {
-      icon: <Smile size={28} />,
+      icon: <Clock size={24} strokeWidth={2.2} />,
       number: "3M",
       label: "full-time depth"
     },
     {
-      icon: <Users size={28} />,
+      icon: <Code2 size={24} strokeWidth={2.2} />,
       number: "36+",
       label: "Live build sessions"
     },
     {
-      icon: <Globe size={28} />,
+      icon: <CalendarCheck size={24} strokeWidth={2.2} />,
       number: "4x",
       label: "Days per week"
     },
     {
-      icon: <Handshake size={28} />,
+      icon: <CheckCircle2 size={24} strokeWidth={2.2} />,
       number: "100%",
       label: "Project-based, no filler"
     }
