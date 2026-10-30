@@ -6,19 +6,19 @@ export default function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: "Emma Rodriguez",
-      badge: "Professional",
+      name: "Akshay Chaudhari",
+      badge: "Professional Track",
       rating: 5,
       avatar: "./assets/testimonial-avatar.jpg",
       photo: "./assets/testimonial-student.jpg",
       paragraphs: [
         "My experience with Softroniics’ AI Forward Deployed Engineering program has been really valuable. The program focuses not just on learning AI concepts, but on understanding how AI can be applied to solve real-world problems.",
-        "What I especially liked was the practical approach, hands-on learning, and exposure to real project scenarios. ."
+        "What I especially liked was the practical approach, hands-on learning, and exposure to real project scenarios."
       ]
     },
     {
       name: "Rahul Verma",
-      badge: "Professional",
+      badge: "Enterprise AI Engineer",
       rating: 5,
       avatar: "./assets/testimonial-avatar.jpg",
       photo: "./assets/testimonial-student.jpg",
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
               WHAT OUR ENGINEERS SAY
             </h2>
             <p className="testimonial-subheading">
-              Nothing makes us happier than seeing our customers enjoy every scoop. Here’s what people are saying about their meltzy experience.
+              Real experiences from developers who launched their careers as forward deployed AI engineers.
             </p>
           </div>
 

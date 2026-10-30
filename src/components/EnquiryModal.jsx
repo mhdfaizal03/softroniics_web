@@ -74,7 +74,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultTopic = "AI Forwa
                   id="modal-name"
                   type="text"
                   required
-                  placeholder="e.g. John Doe"
+                  placeholder="e.g. Akshay Chaudhari"
                   className="form-control"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
