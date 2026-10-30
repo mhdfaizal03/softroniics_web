@@ -28,6 +28,7 @@ export default function App() {
 
   // Smooth Scroll Reveal Observer
   useEffect(() => {
+    document.body.classList.add('js-reveal');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -38,17 +39,20 @@ export default function App() {
         });
       },
       {
-        threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.08,
+        rootMargin: '0px 0px -20px 0px'
       }
     );
 
     const elements = document.querySelectorAll(
-      '.stat-item, .topic-chip, .capstone-item-card, .role-card, .mentor-card, .partner-logo-item, .faq-item, .curriculum-card-main, .learn-card, .cta-banner-card, .prof-banner-card, .hub-details-card'
+      '.stat-item, .topic-chip, .capstone-item-card, .role-card, .mentor-card, .partner-logo-item, .faq-item, .curriculum-card-main, .learn-card, .cta-banner-card, .prof-banner-card, .hub-details-card, .why-card'
     );
     elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      document.body.classList.remove('js-reveal');
+      observer.disconnect();
+    };
   }, []);
 
   const handleOpenModal = (topic = 'AI Forward Deployed Engineering') => {
