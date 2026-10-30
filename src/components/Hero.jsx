@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, Flame, CalendarDays, CalendarClock } from 'lucide-react';
+import { ArrowUpRight, Flame, Calendar, Clock4, Sparkles, PhoneCall } from 'lucide-react';
 import HeroVisual from './HeroVisual';
 
 export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
@@ -42,14 +42,15 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
           {/* Left Column: Hero Content */}
           <div className="hero-content">
             <div className="hero-tag-badge">
-              AI Forward deployed engineering
+              <Sparkles size={14} strokeWidth={2.4} style={{ marginRight: '6px' }} />
+              AI Forward Deployed Engineering
             </div>
 
             {/* Spec Badges Row */}
             <div className="hero-pills-row">
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <CalendarDays size={20} color="#E88F1B" fill="#ffffff" strokeWidth={2} />
+                  <Calendar size={20} strokeWidth={2.2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Duration</span>
@@ -59,7 +60,7 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
 
               <div className="hero-pill-item">
                 <div className="hero-pill-circle">
-                  <CalendarClock size={20} color="#E88F1B" fill="#ffffff" strokeWidth={2} />
+                  <Clock4 size={20} strokeWidth={2.2} />
                 </div>
                 <div className="hero-pill-text">
                   <span className="hero-pill-label">Schedule</span>
@@ -99,7 +100,10 @@ export default function Hero({ onEnrollClick, onViewCurriculumClick }) {
               </button>
 
               <div className="hero-call-info">
-                <span className="hero-call-label">Call Us</span>
+                <span className="hero-call-label">
+                  <PhoneCall size={12} strokeWidth={2.4} style={{ marginRight: '4px' }} />
+                  Call Us
+                </span>
                 <a href="tel:+919037291113" className="hero-call-num">
                   +91 9037-29-1113
                 </a>

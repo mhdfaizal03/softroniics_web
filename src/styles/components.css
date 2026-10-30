@@ -39,14 +39,16 @@
 .hero-tag-badge {
   display: inline-flex;
   align-items: center;
-  background: #FFF4CE;
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 4px;
+  background: #FEF4E7;
+  color: #B45309;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
   margin-bottom: 24px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(232, 143, 27, 0.25);
+  box-shadow: 0 2px 8px rgba(232, 143, 27, 0.08);
 }
 
 .hero-pills-row {
@@ -54,24 +56,38 @@
   align-items: center;
   gap: 32px;
   margin-bottom: 34px;
+  flex-wrap: wrap;
 }
 
 .hero-pill-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  padding: 6px 14px 6px 6px;
+  background: #FFFFFF;
+  border: 1px solid #F3F4F6;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.hero-pill-item:hover {
+  border-color: #FED7AA;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(232, 143, 27, 0.1);
 }
 
 .hero-pill-circle {
   width: 44px;
   height: 44px;
-  border-radius: 8px;
-  background: var(--primary);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #E88F1B 0%, #D97706 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(232, 143, 27, 0.32);
 }
 
 .hero-pill-text {
@@ -80,14 +96,16 @@
 }
 
 .hero-pill-label {
-  font-size: 11px;
-  color: var(--primary);
+  font-size: 11.5px;
+  color: #D97706;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   margin-bottom: 2px;
 }
 
 .hero-pill-val {
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #111827;
 }
@@ -135,16 +153,22 @@
 }
 
 .hero-call-label {
-  font-size: 11px;
-  color: var(--primary);
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  font-size: 11.5px;
+  color: #D97706;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
 }
 
 .hero-call-num {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   color: #111827;
   letter-spacing: 0.01em;
+  transition: color 0.2s ease;
 }
 
 .hero-call-num:hover {
@@ -154,24 +178,27 @@
 .hero-urgency-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: #FFE4E6;
+  gap: 10px;
+  background: #FFF1F2;
   color: #BE123C;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 4px;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 8px 18px 8px 10px;
+  border-radius: var(--radius-full);
   margin-bottom: 24px;
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.06);
 }
 
 .urgency-flame-circle {
-  background: rgba(225, 29, 72, 0.2);
+  background: rgba(225, 29, 72, 0.15);
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .hero-countdown-wrap {
@@ -180,8 +207,8 @@
 
 .hero-countdown-label {
   font-size: 13px;
-  font-weight: 500;
-  color: #374151;
+  font-weight: 600;
+  color: #4B5563;
   margin-bottom: 12px;
 }
 
@@ -191,11 +218,19 @@
 }
 
 .countdown-box {
-  background: #FFF7ED;
+  background: #FFFFFF;
+  border: 1px solid #FED7AA;
   border-radius: var(--radius-sm);
-  padding: 8px 16px;
-  min-width: 64px;
+  padding: 10px 18px;
+  min-width: 68px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(232, 143, 27, 0.08);
+  transition: all 0.2s ease;
+}
+
+.countdown-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(232, 143, 27, 0.15);
 }
 
 .countdown-num {
