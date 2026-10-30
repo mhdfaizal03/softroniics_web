@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/components.css';
 
 import Navbar from './components/Navbar';
@@ -25,6 +25,31 @@ import EnquiryModal from './components/EnquiryModal';
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTopic, setModalTopic] = useState('AI Forward Deployed Engineering');
+
+  // Smooth Scroll Reveal Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      }
+    );
+
+    const elements = document.querySelectorAll(
+      '.stat-item, .topic-chip, .capstone-item-card, .role-card, .mentor-card, .partner-logo-item, .faq-item, .curriculum-card-main, .learn-card, .cta-banner-card, .prof-banner-card, .hub-details-card'
+    );
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleOpenModal = (topic = 'AI Forward Deployed Engineering') => {
     setModalTopic(topic);
