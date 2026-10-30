@@ -608,78 +608,10 @@ img {
 }
 
 /* ========================================================
-   MODERN & SMOOTH ANIMATION SUITE
+   MODERN & SMOOTH MICRO-INTERACTIONS
    ======================================================== */
 
-/* 1. Scroll Reveal Animations (Only apply when JS scroll-reveal is active) */
-.js-reveal .stat-item,
-.js-reveal .topic-chip,
-.js-reveal .capstone-item-card,
-.js-reveal .role-card,
-.js-reveal .mentor-card,
-.js-reveal .partner-logo-item,
-.js-reveal .faq-item,
-.js-reveal .curriculum-card-main,
-.js-reveal .learn-card,
-.js-reveal .cta-banner-card,
-.js-reveal .prof-banner-card,
-.js-reveal .hub-details-card,
-.js-reveal .why-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
-}
-
-.js-reveal .is-revealed {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-/* Staggered cascading reveal delays */
-.js-reveal .stat-item:nth-child(2),
-.js-reveal .topic-chip:nth-child(2),
-.js-reveal .capstone-item-card:nth-child(2),
-.js-reveal .role-card:nth-child(2),
-.js-reveal .mentor-card:nth-child(2),
-.js-reveal .partner-logo-item:nth-child(2),
-.js-reveal .faq-item:nth-child(2) {
-  transition-delay: 0.08s;
-}
-
-.js-reveal .stat-item:nth-child(3),
-.js-reveal .topic-chip:nth-child(3),
-.js-reveal .capstone-item-card:nth-child(3),
-.js-reveal .role-card:nth-child(3),
-.js-reveal .mentor-card:nth-child(3),
-.js-reveal .partner-logo-item:nth-child(3),
-.js-reveal .faq-item:nth-child(3) {
-  transition-delay: 0.16s;
-}
-
-.js-reveal .stat-item:nth-child(4),
-.js-reveal .topic-chip:nth-child(4),
-.js-reveal .capstone-item-card:nth-child(4),
-.js-reveal .role-card:nth-child(4),
-.js-reveal .mentor-card:nth-child(4),
-.js-reveal .partner-logo-item:nth-child(4),
-.js-reveal .faq-item:nth-child(4) {
-  transition-delay: 0.24s;
-}
-
-.js-reveal .topic-chip:nth-child(5),
-.js-reveal .role-card:nth-child(5),
-.js-reveal .partner-logo-item:nth-child(5) {
-  transition-delay: 0.30s;
-}
-
-.js-reveal .topic-chip:nth-child(6),
-.js-reveal .role-card:nth-child(6),
-.js-reveal .partner-logo-item:nth-child(6) {
-  transition-delay: 0.36s;
-}
-
-/* 2. Hero Visual Ambient Floating Animation */
+/* 1. Hero Visual Ambient Floating Animation */
 @keyframes heroFloat3D {
   0%, 100% {
     transform: rotateY(-5deg) rotateX(2deg) translateY(0);
@@ -748,23 +680,6 @@ img {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-  
-  .stat-item,
-  .topic-chip,
-  .capstone-item-card,
-  .role-card,
-  .mentor-card,
-  .partner-logo-item,
-  .faq-item,
-  .curriculum-card-main,
-  .learn-card,
-  .cta-banner-card,
-  .prof-banner-card,
-  .hub-details-card,
-  .why-card {
-    opacity: 1 !important;
-    transform: none !important;
   }
 }
 
